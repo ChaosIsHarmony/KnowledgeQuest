@@ -1,0 +1,50 @@
+import enum
+
+class Skills(enum.Enum):
+    # STANDARD DnD
+    # STR
+    ATHLETICS = 0
+    # DEX
+    ACROBATICS = 1
+    SLEIGHT_OF_HAND = 2
+    STEALTH = 3
+    # INT
+    ARCANA = 4
+    HISTORY = 5
+    INVESTIGATION = 6
+    NATURE = 7
+    RELIGION = 8
+    # WIS
+    ANIMAL_HANDLING = 9
+    INSIGHT = 10
+    MEDICINE = 11
+    PERCEPTION = 12
+    SURVIVAL = 13
+    # CHA
+    DECEPTION = 14
+    INTIMIDATION = 15
+    PERFORMANCE = 16
+    PERSUASION = 17
+
+    # MINE (100+)
+    # STR
+    FIGHT_POWER = 100
+    # DEX
+    MUSIC_TECHNIQUE = 200
+    FIGHT_TECHNIQUE = 201
+    # INT
+    STEM = 300
+    HUMANITIES = 301
+    ARTS = 302
+    FIGHT_CONCEPTS = 304
+    # WIS
+    ACUMEN = 400
+    AWARENESS = 401
+    COPING = 402
+    # CHA
+    MUSIC_PERFORMANCE = 500
+    FIGHT_PERFORMANCE = 501
+    INFLUENCE = 502
+
+
+
