@@ -20,3 +20,12 @@ class CoreStats(enum.Enum):
     WISDOM = 3
     INTELLIGENCE = 4
     CHARISMA = 5
+
+coreStatsMap = {
+    CoreStats.STRENGTH: "STR",
+    CoreStats.DEXTERITY: "DEX",
+    CoreStats.CONSTITUTION: "CON",
+    CoreStats.WISDOM: "WIS",
+    CoreStats.INTELLIGENCE: "INT",
+    CoreStats.CHARISMA: "CHA"
+}

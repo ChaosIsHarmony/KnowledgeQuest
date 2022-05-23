@@ -1,7 +1,7 @@
 import enum
 
 from .enums.KnowledgeQuestModes import KnowledgeQuestModes as Modes
-from .modes import QuestGiver
+from .modes import QuestBoard
 from .modes import Inquisitor
 from .modes import StatsKeeper
 
@@ -29,7 +29,7 @@ def determine_mode() -> Modes:
 def execute_mode(mode: Modes) -> None:
     """Run Selected Mode. Return to Main Menu after."""
     if mode == Modes.QUEST:
-        QuestGiver.run()
+        QuestBoard.run()
     elif mode == Modes.QUIZ:
         Inquisitor.run()
     else:

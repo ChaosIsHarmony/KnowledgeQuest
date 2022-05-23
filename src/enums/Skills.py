@@ -1,34 +1,9 @@
 import enum
 
 class Skills(enum.Enum):
-    # STANDARD DnD
     # STR
-    ATHLETICS = 0
-    # DEX
-    ACROBATICS = 1
-    SLEIGHT_OF_HAND = 2
-    STEALTH = 3
-    # INT
-    ARCANA = 4
-    HISTORY = 5
-    INVESTIGATION = 6
-    NATURE = 7
-    RELIGION = 8
-    # WIS
-    ANIMAL_HANDLING = 9
-    INSIGHT = 10
-    MEDICINE = 11
-    PERCEPTION = 12
-    SURVIVAL = 13
-    # CHA
-    DECEPTION = 14
-    INTIMIDATION = 15
-    PERFORMANCE = 16
-    PERSUASION = 17
-
-    # MINE (100+)
-    # STR
-    FIGHT_POWER = 100
+    POWER = 100
+    STAMINA = 101
     # DEX
     MUSIC_TECHNIQUE = 200
     FIGHT_TECHNIQUE = 201
@@ -37,14 +12,33 @@ class Skills(enum.Enum):
     HUMANITIES = 301
     ARTS = 302
     FIGHT_CONCEPTS = 304
+    LINGUISTICS = 305
     # WIS
     ACUMEN = 400
     AWARENESS = 401
-    COPING = 402
+    INSIGHT = 402
+    SURVIVAL = 403
     # CHA
     MUSIC_PERFORMANCE = 500
     FIGHT_PERFORMANCE = 501
-    INFLUENCE = 502
+    PERSUASION = 502
 
 
-
+skillsMap = {
+    Skills.POWER: "Physical-Power",
+    Skills.STAMINA: "Physical-Stamina",
+    Skills.MUSIC_TECHNIQUE: "Music-Technique",
+    Skills.FIGHT_TECHNIQUE: "Fight-Technique",
+    Skills.STEM: "STEM",
+    Skills.HUMANITIES: "Humanities",
+    Skills.ARTS: "Arts",
+    Skills.FIGHT_CONCEPTS: "Fight-Concepts",
+    Skills.LINGUISTICS: "Linguistics",
+    Skills.ACUMEN: "Acumen",
+    Skills.AWARENESS: "Awareness",
+    Skills.INSIGHT: "Insight",
+    Skills.SURVIVAL: "Survival",
+    Skills.MUSIC_PERFORMANCE: "Music-Performance",
+    Skills.FIGHT_PERFORMANCE: "Fight-Performance",
+    Skills.PERSUASION: "Persuasion"
+}

@@ -4,11 +4,15 @@ import json
 import time
 
 from ..entities.Quest import Quest
+from ..enums.CoreStats import CoreStats, coreStatsMap
+from ..enums.Skills import Skills, skillsMap
 from ..enums.QuestOptions import QuestOptions as Options
-from ..enums.QuestStatus import QuestStatus
-from typing import List
+from ..enums.QuestStatus import QuestStatus as Status
+
+from typing import Dict, List, TypeVar
 
 
+T = TypeVar("T")
 QUESTS_FILEPATH = "./data/quests.json"
 
 
@@ -48,12 +52,27 @@ def get_end_date(start: time, duration: int) -> str:
     return f"{endDate.year}-{endDate.month}-{endDate.day}"
 
 
+def create_str_from_list(listToUse: List[T], mapToUse: Dict[T, str]) -> str:
+    strFromList = ""
+    itemsAdded = 0
+
+    for item in listToUse:
+        strFromList += mapToUse[item]
+        itemsAdded += 1
+        if itemsAdded != len(listToUse):
+            strFromList += ", "
+
+    return strFromList
+
+
 def format_quests(ongoingQuests: List[Quest]) -> List[str]:
     formattedQuests = []
     for quest in ongoingQuests:
         questStr = "***************\n"
-        questStr += f"{quest.get_title()}\n"
-        questStr += f"END: {get_end_date(quest.get_start_time(), quest.get_duration())}\n"
+        questStr += f"TITLE: {quest.get_title()}\n"
+        questStr += f"STATS AFFECTED: {create_str_from_list(quest.get_stats(), coreStatsMap)}"
+        questStr += f"SKILLS AFFECTED: {create_str_from_list(quest.get_skills(), skillsMap)}"
+        questStr += f"ENDS ON: {get_end_date(quest.get_start_time(), quest.get_duration())}\n"
 
         questStr += "***************\n"
 
@@ -65,7 +84,7 @@ def format_quests(ongoingQuests: List[Quest]) -> List[str]:
 
 
 def display_ongoing_quests(unformattedQuests: List[Quest]) -> None:
-    ongoingQuests = list(filter(lambda x: x.get_status() == QuestStatus.ON_GOING.value, unformattedQuests))
+    ongoingQuests = list(filter(lambda x: x.get_status() == Status.ON_GOING.value, unformattedQuests))
     formattedQuests = format_quests(ongoingQuests)
 
     for quest in formattedQuests:
