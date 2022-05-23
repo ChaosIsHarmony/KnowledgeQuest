@@ -53,12 +53,12 @@ class TestEntities(unittest2.TestCase):
 
 
     def test_create_str_from_list(self):
-        coreStats2 = [CoreStats.STRENGTH, CoreStats.CHARISMA]
+        coreStats2 = [CoreStats.STRENGTH.value, CoreStats.CHARISMA.value]
         coreStatsAffectedStr2 = qb.create_str_from_list(coreStats2, coreStatsMap)
 
         self.assertEqual(coreStatsAffectedStr2, "STR, CHA")
 
-        skills2 = [Skills.STAMINA, Skills.POWER]
+        skills2 = [Skills.STAMINA.value, Skills.POWER.value]
         skillsAffected2 = qb.create_str_from_list(skills2, skillsMap)
 
         self.assertEqual(skillsAffected2, "Physical-Stamina, Physical-Power")

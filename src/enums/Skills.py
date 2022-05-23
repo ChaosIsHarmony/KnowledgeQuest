@@ -25,20 +25,20 @@ class Skills(enum.Enum):
 
 
 skillsMap = {
-    Skills.POWER: "Physical-Power",
-    Skills.STAMINA: "Physical-Stamina",
-    Skills.MUSIC_TECHNIQUE: "Music-Technique",
-    Skills.FIGHT_TECHNIQUE: "Fight-Technique",
-    Skills.STEM: "STEM",
-    Skills.HUMANITIES: "Humanities",
-    Skills.ARTS: "Arts",
-    Skills.FIGHT_CONCEPTS: "Fight-Concepts",
-    Skills.LINGUISTICS: "Linguistics",
-    Skills.ACUMEN: "Acumen",
-    Skills.AWARENESS: "Awareness",
-    Skills.INSIGHT: "Insight",
-    Skills.SURVIVAL: "Survival",
-    Skills.MUSIC_PERFORMANCE: "Music-Performance",
-    Skills.FIGHT_PERFORMANCE: "Fight-Performance",
-    Skills.PERSUASION: "Persuasion"
+    Skills.POWER.value: "Physical-Power",
+    Skills.STAMINA.value: "Physical-Stamina",
+    Skills.MUSIC_TECHNIQUE.value: "Music-Technique",
+    Skills.FIGHT_TECHNIQUE.value: "Fight-Technique",
+    Skills.STEM.value: "STEM",
+    Skills.HUMANITIES.value: "Humanities",
+    Skills.ARTS.value: "Arts",
+    Skills.FIGHT_CONCEPTS.value: "Fight-Concepts",
+    Skills.LINGUISTICS.value: "Linguistics",
+    Skills.ACUMEN.value: "Acumen",
+    Skills.AWARENESS.value: "Awareness",
+    Skills.INSIGHT.value: "Insight",
+    Skills.SURVIVAL.value: "Survival",
+    Skills.MUSIC_PERFORMANCE.value: "Music-Performance",
+    Skills.FIGHT_PERFORMANCE.value: "Fight-Performance",
+    Skills.PERSUASION.value: "Persuasion"
 }

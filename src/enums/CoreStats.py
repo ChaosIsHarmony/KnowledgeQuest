@@ -22,10 +22,10 @@ class CoreStats(enum.Enum):
     CHARISMA = 5
 
 coreStatsMap = {
-    CoreStats.STRENGTH: "STR",
-    CoreStats.DEXTERITY: "DEX",
-    CoreStats.CONSTITUTION: "CON",
-    CoreStats.WISDOM: "WIS",
-    CoreStats.INTELLIGENCE: "INT",
-    CoreStats.CHARISMA: "CHA"
+    CoreStats.STRENGTH.value: "STR",
+    CoreStats.DEXTERITY.value: "DEX",
+    CoreStats.CONSTITUTION.value: "CON",
+    CoreStats.WISDOM.value: "WIS",
+    CoreStats.INTELLIGENCE.value: "INT",
+    CoreStats.CHARISMA.value: "CHA"
 }

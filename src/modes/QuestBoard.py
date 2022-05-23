@@ -69,9 +69,10 @@ def format_quests(ongoingQuests: List[Quest]) -> List[str]:
     formattedQuests = []
     for quest in ongoingQuests:
         questStr = "***************\n"
+        questStr += f"QUEST-ID: {quest.get_id()}\n"
         questStr += f"TITLE: {quest.get_title()}\n"
-        questStr += f"STATS AFFECTED: {create_str_from_list(quest.get_stats(), coreStatsMap)}"
-        questStr += f"SKILLS AFFECTED: {create_str_from_list(quest.get_skills(), skillsMap)}"
+        questStr += f"STATS AFFECTED: {create_str_from_list(quest.get_stats(), coreStatsMap)}\n"
+        questStr += f"SKILLS AFFECTED: {create_str_from_list(quest.get_skills(), skillsMap)}\n"
         questStr += f"ENDS ON: {get_end_date(quest.get_start_time(), quest.get_duration())}\n"
 
         questStr += "***************\n"
