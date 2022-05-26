@@ -1,8 +1,8 @@
 import datetime
-import enum
 import json
 import time
 
+from .. import common
 from ..entities.Quest import Quest
 from ..enums.CoreStats import CoreStats, coreStatsMap
 from ..enums.Skills import Skills, skillsMap
@@ -11,22 +11,7 @@ from ..enums.QuestStatus import QuestStatus as Status
 
 from typing import Dict, List, TypeVar
 
-
 T = TypeVar("T")
-QUESTS_FILEPATH = "./data/quests.json"
-
-
-
-def load_quests(path: str) -> List[str]:
-    contents = []
-
-    try:
-        with open(path) as f:
-            contents = json.load(f)
-    except:
-        print("There was a problem loading the quest.json file.")
-
-    return contents
 
 
 def deserialize_quests(questsJson: List[str]) -> List[Quest]:
@@ -39,8 +24,8 @@ def deserialize_quests(questsJson: List[str]) -> List[Quest]:
 
 
 def fetch_quests(path: str) -> List[Quest]:
-    contents = load_quests(path)
-    quests = deserialize_quests(contents)
+    questFileContents = common.load_file(common.QUESTS_FILEPATH)
+    quests = deserialize_quests(questFileContents)
 
     return quests
 
