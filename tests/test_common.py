@@ -14,7 +14,7 @@ import src.common as common
 class TestCommon(unittest2.TestCase):
 
     def test_load_file_quests(self):
-        file_contents = common.load_file(common.QUESTS_FILEPATH)
+        file_contents = common.load_file(common.TEST_QUESTS_FILEPATH)
 
         # test number of dummy entries
         self.assertEqual(len(file_contents), 3)
@@ -23,10 +23,10 @@ class TestCommon(unittest2.TestCase):
 
 
     def test_load_file_questions(self):
-        file_contents = common.load_file(common.QUESTIONS_FILEPATH)
+        file_contents = common.load_file(common.TEST_QUESTIONS_FILEPATH)
 
         # test number of dummy entries
-        self.assertEqual(len(file_contents), 1)
+        self.assertEqual(len(file_contents), 9)
         # test fields have been parsed correctly
         self.assertEqual(file_contents[0]["id"], 1)
 

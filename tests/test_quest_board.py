@@ -17,7 +17,7 @@ from src.enums.Skills import Skills, skillsMap
 class TestQuestBoard(unittest2.TestCase):
 
     def test_load_quests(self):
-        file_contents = common.load_file(common.QUESTS_FILEPATH)
+        file_contents = common.load_file(common.TEST_QUESTS_FILEPATH)
 
         # test number of dummy entries
         self.assertEqual(len(file_contents), 3)
@@ -26,7 +26,7 @@ class TestQuestBoard(unittest2.TestCase):
 
 
     def test_deserialize_quests(self):
-        quests = qb.deserialize_quests(common.load_file(common.QUESTS_FILEPATH))
+        quests = qb.deserialize_quests(common.load_file(common.TEST_QUESTS_FILEPATH))
 
         # test number o fdummy entries
         self.assertEqual(len(quests), 3)
@@ -35,7 +35,7 @@ class TestQuestBoard(unittest2.TestCase):
 
 
     def test_fetch_quests(self):
-        quests = qb.fetch_quests(common.QUESTS_FILEPATH)
+        quests = qb.fetch_quests(common.TEST_QUESTS_FILEPATH)
 
         # test number o fdummy entries
         self.assertEqual(len(quests), 3)
@@ -62,10 +62,10 @@ class TestQuestBoard(unittest2.TestCase):
 
         self.assertEqual(coreStatsAffectedStr2, "STR, CHA")
 
-        skills2 = [Skills.STAMINA.value, Skills.POWER.value]
+        skills2 = [Skills.STEM.value, Skills.LINGUISTICS.value]
         skillsAffected2 = qb.create_str_from_list(skills2, skillsMap)
 
-        self.assertEqual(skillsAffected2, "Physical-Stamina, Physical-Power")
+        self.assertEqual(skillsAffected2, "STEM, Linguistics")
 
 
 if __name__ == "__main__":

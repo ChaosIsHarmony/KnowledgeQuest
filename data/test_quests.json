@@ -1,0 +1,41 @@
+[
+  {
+    "id": 1,
+    "title": "Bobo's Bodega Diving",
+    "description": "Retrieve the treasures of yore from the bodega",
+    "stats": [1,2],
+    "skills": [100,200],
+    "duration": 3,
+    "start_time": 1653228559.4072394,
+    "conditions_for_success": [],
+    "status": 0,
+    "tags": [],
+    "notes": []
+  },
+  {
+    "id": 2,
+    "title": "Bobo's Bodega Diving",
+    "description": "Retrieve the treasures of yore from the bodega",
+    "stats": [1,2],
+    "skills": [100,200],
+    "duration": 3,
+    "start_time": 1653228559.4072394,
+    "conditions_for_success": [],
+    "status": 1,
+    "tags": [],
+    "notes": []
+  },
+  {
+    "id": 3,
+    "title": "Bobo's Bodega Diving",
+    "description": "Retrieve the treasures of yore from the bodega",
+    "stats": [1,2],
+    "skills": [100,200],
+    "duration": 3,
+    "start_time": 1653228559.4072394,
+    "conditions_for_success": [],
+    "status": 2,
+    "tags": [],
+    "notes": []
+  }
+]

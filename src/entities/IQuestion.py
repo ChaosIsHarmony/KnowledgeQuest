@@ -19,6 +19,10 @@ class IQuestion(ABC):
         pass
 
     @abstractmethod
+    def get_answer(self) -> str:
+        pass
+
+    @abstractmethod
     def get_num_times_asked(self) -> int:
         pass
 
@@ -39,11 +43,11 @@ class IQuestion(ABC):
         pass
 
     @abstractmethod
-    def get_last_date_asked(self) -> time:
+    def get_last_asked(self) -> time:
         pass
 
     @abstractmethod
-    def update_last_date_asked(self) -> None:
+    def update_last_asked(self) -> None:
         pass
 
     @abstractmethod

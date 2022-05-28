@@ -1,0 +1,32 @@
+{
+  "id": 1,
+  "name": "Eliot",
+  "core_stats": {
+    "STRENGTH": 0,
+    "STAMINA": 0,
+    "DEXTERITY": 0,
+    "CONSTITUTION": 0,
+    "WISDOM": 0,
+    "INTELLIGENCE": 0,
+    "CHARISMA": 0,
+    "WILLPOWER": 0
+  },
+  "skills": {
+    "MUSIC_TECHNIQUE": 0,
+    "FIGHT_TECHNIQUE": 0,
+    "STEM": 0,
+    "HUMANITIES": 0,
+    "ARTS": 0,
+    "LINGUISTICS": 0,
+    "FIGHT_CONCEPTS": 0,
+    "SURVIVAL_CONCEPTS": 0,
+    "ACUMEN": 0,
+    "AWARENESS": 0,
+    "INSIGHT": 0,
+    "SURVIVAL_APPLICATIONS": 0,
+    "MUSIC_PERFORMANCE": 0,
+    "FIGHT_PERFORMANCE": 0,
+    "PERSUASION": 0,
+    "PEOPLE_READING": 0
+  }
+}

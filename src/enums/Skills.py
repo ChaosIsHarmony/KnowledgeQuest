@@ -1,32 +1,33 @@
 import enum
 
 class Skills(enum.Enum):
-    # STR
-    POWER = 100
-    STAMINA = 101
-    # DEX
-    MUSIC_TECHNIQUE = 200
-    FIGHT_TECHNIQUE = 201
-    # INT
-    STEM = 300
-    HUMANITIES = 301
-    ARTS = 302
-    FIGHT_CONCEPTS = 304
-    LINGUISTICS = 305
-    # WIS
-    ACUMEN = 400
-    AWARENESS = 401
-    INSIGHT = 402
-    SURVIVAL = 403
-    # CHA
-    MUSIC_PERFORMANCE = 500
-    FIGHT_PERFORMANCE = 501
-    PERSUASION = 502
+    # STR (100)
+    # STA (200)
+    # DEX (300)
+    MUSIC_TECHNIQUE = 300
+    FIGHT_TECHNIQUE = 301
+    # CON (400)
+    # INT (500)
+    STEM = 500
+    HUMANITIES = 501
+    ARTS = 502
+    FIGHT_CONCEPTS = 504
+    LINGUISTICS = 505
+    SURVIVAL_CONCEPTS = 506
+    # WIS (600)
+    ACUMEN = 600
+    AWARENESS = 601
+    INSIGHT = 602
+    SURVIVAL_APPLICATIONS = 603
+    # CHA (700)
+    MUSIC_PERFORMANCE = 700
+    FIGHT_PERFORMANCE = 701
+    PERSUASION = 702
+    PEOPLE_READING = 703
+    # WIL (800)
 
 
 skillsMap = {
-    Skills.POWER.value: "Physical-Power",
-    Skills.STAMINA.value: "Physical-Stamina",
     Skills.MUSIC_TECHNIQUE.value: "Music-Technique",
     Skills.FIGHT_TECHNIQUE.value: "Fight-Technique",
     Skills.STEM.value: "STEM",
@@ -34,11 +35,13 @@ skillsMap = {
     Skills.ARTS.value: "Arts",
     Skills.FIGHT_CONCEPTS.value: "Fight-Concepts",
     Skills.LINGUISTICS.value: "Linguistics",
+    Skills.SURVIVAL_CONCEPTS.value: "Survival-Concepts",
     Skills.ACUMEN.value: "Acumen",
     Skills.AWARENESS.value: "Awareness",
     Skills.INSIGHT.value: "Insight",
-    Skills.SURVIVAL.value: "Survival",
+    Skills.SURVIVAL_APPLICATIONS.value: "Survival-Applications",
     Skills.MUSIC_PERFORMANCE.value: "Music-Performance",
     Skills.FIGHT_PERFORMANCE.value: "Fight-Performance",
-    Skills.PERSUASION.value: "Persuasion"
+    Skills.PERSUASION.value: "Persuasion",
+    Skills.PEOPLE_READING.value: "People Reading"
 }

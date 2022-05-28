@@ -22,10 +22,6 @@ class Quest(IQuest):
         self.__notes = notes
         self.__start_time = startTime
 
-    @classmethod
-    def from_dict(cls, attrDict) -> IQuest:
-        return cls(attrDict["id"], attrDict["title"], attrDict["description"], attrDict["stats"], attrDict["skills"], attrDict["duration"], attrDict["conditions_for_success"], attrDict["status"], attrDict["tags"], attrDict["notes"], attrDict["start_time"])
-
     def get_id(self) -> int:
         return self.__id
 
