@@ -81,7 +81,24 @@ def perform_inquisition(questions: List[IQuestion]) -> None:
     4.) IQuestion stats are updated
     5.) If more questions are left, go to step 1
     '''
-    pass
+    for question in questions:
+        # ask question
+        print(question.get_text())
+        random.shuffle(question.get_answers())
+        for i, answer in enumerate(question.get_answers()):
+            print(f"{i}.) {answer}")
+        # accept input
+        nAnswer = ""
+        while not isinstance(nAnswer, int):
+            nAnswer = int(input("Correct answer [#]: "))
+        # show result
+        if question.get_answers()[nAnswer] == question.get_answer():
+            question.increment_num_times_answered_correctly()
+            print("Correct!")
+        else:
+            print(f"Incorrect.\nThe correct answer is: {question.get_answer()}")
+        question.increment_num_times_asked()
+        question.update_last_asked()
 
 
 def run() -> None:
@@ -93,6 +110,9 @@ def run() -> None:
     '''
     questions = fetch_questions(common.QUESTIONS_FILEPATH)
 
+    if len(questions) < 1:
+        return
+
     while True:
         try:
             nQuestions = int(input("How many questions? "))
@@ -102,3 +122,7 @@ def run() -> None:
 
     inquisition = create_inquisition(questions, nQuestions)
     perform_inquisition(inquisition)
+    # update all question stats
+    listOfUpdatedQuestions = list(filter(lambda q: not any(q2.get_id() == q.get_id() for q2 in inquisition), questions))
+    listOfUpdatedQuestions.extend(inquisition)
+    common.write_file(listOfUpdatedQuestions, common.QUESTIONS_FILEPATH)

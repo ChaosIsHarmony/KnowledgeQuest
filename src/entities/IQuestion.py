@@ -11,11 +11,11 @@ class IQuestion(ABC):
         pass
 
     @abstractmethod
-    def get_question_text(self) -> str:
+    def get_text(self) -> str:
         pass
 
     @abstractmethod
-    def get_question_answers(self) -> List[str]:
+    def get_answers(self) -> List[str]:
         pass
 
     @abstractmethod

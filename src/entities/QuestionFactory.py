@@ -10,7 +10,7 @@ class QuestionFactory:
                         attrDict["answers"],
                         attrDict["answer"],
                         attrDict["n_times_asked"],
-                        attrDict["n_times_correctly_answered"],
+                        attrDict["n_times_answered_correctly"],
                         attrDict["last_asked"],
                         attrDict["skills"],
                         attrDict["tags"])

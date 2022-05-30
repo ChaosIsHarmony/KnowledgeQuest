@@ -14,6 +14,7 @@ class Skills(enum.Enum):
     FIGHT_CONCEPTS = 504
     LINGUISTICS = 505
     SURVIVAL_CONCEPTS = 506
+    FINANCE = 507
     # WIS (600)
     ACUMEN = 600
     AWARENESS = 601
@@ -36,6 +37,7 @@ skillsMap = {
     Skills.FIGHT_CONCEPTS.value: "Fight-Concepts",
     Skills.LINGUISTICS.value: "Linguistics",
     Skills.SURVIVAL_CONCEPTS.value: "Survival-Concepts",
+    Skills.FINANCE.value: "Finance",
     Skills.ACUMEN.value: "Acumen",
     Skills.AWARENESS.value: "Awareness",
     Skills.INSIGHT.value: "Insight",

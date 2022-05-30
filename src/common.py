@@ -7,6 +7,7 @@ QUESTS_FILEPATH = "./data/quests.json"
 TEST_QUESTS_FILEPATH = "./data/test_quests.json"
 QUESTIONS_FILEPATH = "./data/questions.json"
 TEST_QUESTIONS_FILEPATH = "./data/test_questions.json"
+TMP_FILEPATH = "./data/tmp.json"
 
 
 def load_file(path: str) -> List[str]:
@@ -19,6 +20,11 @@ def load_file(path: str) -> List[str]:
         print(f"There was a problem loading the file: {path}")
 
     return contents
+
+
+def write_file(data, path: str) -> None:
+    with open(path, 'w') as f:
+        f.write(json.dumps([obj.to_json() for obj in data]))
 
 
 def compare_questions_by_accuracy(a: IQuestion, b: IQuestion) -> int:
