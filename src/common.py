@@ -1,5 +1,8 @@
 import json
 
+from .factories.QuestFactory import QuestFactory
+from .factories.QuestionFactory import QuestionFactory
+from .interfaces.IQuest import IQuest
 from .interfaces.IQuestion import IQuestion
 from typing import List
 
@@ -48,3 +51,37 @@ def compare_questions_by_last_asked(a: IQuestion, b: IQuestion) -> int:
     if a.get_last_asked() < b.get_last_asked():
         return -1
     return 0
+
+
+def deserialize_questions(questionsJson: List[str]) -> List[IQuestion]:
+    questions = []
+
+    for question in questionsJson:
+        questions.append(QuestionFactory.from_dict(question))
+
+    return questions
+
+
+def deserialize_quests(questsJson: List[str]) -> List[IQuest]:
+    quests = []
+
+    for quest in questsJson:
+        quests.append(QuestFactory.from_dict(quest))
+
+    return quests
+
+
+def get_highest_question_id() -> int:
+    contents = load_file(QUESTIONS_FILEPATH)
+    questions = deserialize_questions(contents)
+
+    highestId = 0
+    for question in questions:
+        if question.get_id() > highestId:
+            highestId = question.get_id()
+
+    print(f"The highest question id is: {highestId}")
+
+
+if __name__ == "__main__":
+    get_highest_question_id()

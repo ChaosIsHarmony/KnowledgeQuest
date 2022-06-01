@@ -4,7 +4,6 @@ import time
 
 from .. import common
 from ..interfaces.IQuest import IQuest
-from ..factories.QuestFactory import QuestFactory
 from ..enums.CoreStats import CoreStats, coreStatsMap
 from ..enums.Skills import Skills, skillsMap
 from ..enums.QuestOptions import QuestOptions as Options
@@ -15,18 +14,9 @@ from typing import Dict, List, TypeVar
 T = TypeVar("T")
 
 
-def deserialize_quests(questsJson: List[str]) -> List[IQuest]:
-    quests = []
-
-    for quest in questsJson:
-        quests.append(QuestFactory.from_dict(quest))
-
-    return quests
-
-
 def fetch_quests(path: str) -> List[IQuest]:
     questFileContents = common.load_file(path)
-    quests = deserialize_quests(questFileContents)
+    quests = common.deserialize_quests(questFileContents)
 
     return quests
 

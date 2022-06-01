@@ -3,24 +3,14 @@ import random
 
 from .. import common
 from ..interfaces.IQuestion import IQuestion
-from ..factories.QuestionFactory import QuestionFactory
 
 from functools import cmp_to_key
 from typing import List
 
 
-def deserialize_questions(questionsJson: List[str]) -> List[IQuestion]:
-    questions = []
-
-    for question in questionsJson:
-        questions.append(QuestionFactory.from_dict(question))
-
-    return questions
-
-
 def fetch_questions(path: str) -> List[IQuestion]:
     questionsFileContents = common.load_file(path)
-    questions = deserialize_questions(questionsFileContents)
+    questions = common.deserialize_questions(questionsFileContents)
 
     return questions
 

@@ -288,5 +288,246 @@
             "programming",
             "technocraft"
         ]
+    },
+    {
+        "id": 25,
+        "question_text": "What is statistical power?",
+        "answers": [
+            "It is the likelihood of a significance test detecting an effect when there is one (True Positive). It is mainly influenced by sample size, effect size, and significance level.",
+            "It is the probability of avoiding a Type I error (False Positive).",
+            "It is the metric used to determine the author's credibility."
+        ],
+        "answer": "It is the likelihood of a significance test detecting an effect when there is one (True Positive). It is mainly influenced by sample size, effect size, and significance level.",
+        "n_times_asked": 0,
+        "n_times_answered_correctly": 0,
+        "last_asked": 0,
+        "skills": [
+            500,
+            601,
+            602
+        ],
+        "tags": [
+            "statistics",
+            "data science"
+        ]
+    },
+    {
+        "id": 21,
+        "question_text": "What are the null and alternative hypotheses?",
+        "answers": [
+            "Null hypothesis: there is no observable effect in the population; Alternative hypothesis: there is an observable effect in the population.",
+            "Null hypothesis: nothing happened; Alternative hypothesis: under the same conditions, something did happen the second time.",
+            "Null hypothesis: there is no explanation for a given phenomenon; Alternative hypothesis: there is an explanation."
+        ],
+        "answer": "Null hypothesis: there is no observable effect in the population; Alternative hypothesis: there is an observable effect in the population.",
+        "n_times_asked": 1,
+        "n_times_answered_correctly": 1,
+        "last_asked": 1654095308.0265424,
+        "skills": [
+            500,
+            601,
+            602
+        ],
+        "tags": [
+            "statistics",
+            "data science"
+        ]
+    },
+    {
+        "id": 17,
+        "question_text": "What are oversampling and undersampling?",
+        "answers": [
+            "When statisticians go out and collect more samples of one kind and fewer of another to enhance the dataset.",
+            "A reason for rejecting a given dataset as valid.",
+            "Forms of resampling to even out representation of majority and minority data to avoid incorrect conclusions based on an unbalanced dataset."
+        ],
+        "answer": "Forms of resampling to even out representation of majority and minority data to avoid incorrect conclusions based on an unbalanced dataset.",
+        "n_times_asked": 1,
+        "n_times_answered_correctly": 1,
+        "last_asked": 1654095323.6519105,
+        "skills": [
+            500,
+            601,
+            602
+        ],
+        "tags": [
+            "statistics",
+            "data science"
+        ]
+    },
+    {
+        "id": 22,
+        "question_text": "When can we reject the null hypothesis?",
+        "answers": [
+            "When p = \u03b1.",
+            "When p > \u03b1.",
+            "When p \u2264 \u03b1."
+        ],
+        "answer": "When p \u2264 \u03b1.",
+        "n_times_asked": 1,
+        "n_times_answered_correctly": 1,
+        "last_asked": 1654095397.312562,
+        "skills": [
+            500,
+            601,
+            602
+        ],
+        "tags": [
+            "statistics",
+            "data science"
+        ]
+    },
+    {
+        "id": 24,
+        "question_text": "How are p-values (the threshold for statistical significance) determined?",
+        "answers": [
+            "It depends on the quantity of data available: more data means a higher threshold.",
+            "They are decided by the Statistics Bureau.",
+            "They are arbitrary and decided by the researcher, but are often p = 0.05 or 5%."
+        ],
+        "answer": "They are arbitray and decided by the researcher, but are often p = 0.05 or 5%.",
+        "n_times_asked": 1,
+        "n_times_answered_correctly": 1,
+        "last_asked": 1654095416.6736314,
+        "skills": [
+            500,
+            601,
+            602
+        ],
+        "tags": [
+            "statistics",
+            "data science"
+        ]
+    },
+    {
+        "id": 23,
+        "question_text": "What are Type I and Type II errors?",
+        "answers": [
+            "False Positive, Data Collection error, respectively.",
+            "False Positive, False Negative, respectively.",
+            "False Negative, False Positive, respectively."
+        ],
+        "answer": "False Positive, False Negative, respectively.",
+        "n_times_asked": 1,
+        "n_times_answered_correctly": 1,
+        "last_asked": 1654095434.9395003,
+        "skills": [
+            500,
+            601,
+            602
+        ],
+        "tags": [
+            "statistics",
+            "data science"
+        ]
+    },
+    {
+        "id": 19,
+        "question_text": "What does variance measure?\n (\u03a3 (x_i - \u00b5)^2)/n ",
+        "answers": [
+            "It measures how close an individual data point is from the mean.",
+            "It measures the average distance of all data points from the mean.",
+            "It measures the average change between data points."
+        ],
+        "answer": "It measures the average distance of all data points from the mean.",
+        "n_times_asked": 1,
+        "n_times_answered_correctly": 1,
+        "last_asked": 1654095450.306593,
+        "skills": [
+            500,
+            601,
+            602
+        ],
+        "tags": [
+            "statistics",
+            "data science"
+        ]
+    },
+    {
+        "id": 18,
+        "question_text": "What are the three measures of central tendency in statistics?",
+        "answers": [
+            "Median, Mode, Meridian",
+            "Mode, Median, Mean",
+            "Mode, Median, Meridian"
+        ],
+        "answer": "Mode, Median, Mean",
+        "n_times_asked": 1,
+        "n_times_answered_correctly": 1,
+        "last_asked": 1654095455.8818119,
+        "skills": [
+            500,
+            601,
+            602
+        ],
+        "tags": [
+            "statistics",
+            "data science"
+        ]
+    },
+    {
+        "id": 16,
+        "question_text": "What is the difference between Descriptive Statistics and Inferential Statistics?",
+        "answers": [
+            "Descriptive Statistics cannot be done without Inferential Statistics.",
+            "Descriptive Statistics describe how to do Inferential Statistics.",
+            "Descriptive Statistics show what the data are; Inferential Statistics show what the data mean."
+        ],
+        "answer": "Descriptive Statistics show what the data are; Inferential Statistics show what the data mean.",
+        "n_times_asked": 1,
+        "n_times_answered_correctly": 1,
+        "last_asked": 1654095468.8891153,
+        "skills": [
+            500,
+            601,
+            602
+        ],
+        "tags": [
+            "statistics",
+            "data science"
+        ]
+    },
+    {
+        "id": 15,
+        "question_text": "What is the Procrustean Bed?",
+        "answers": [
+            "A bed where people must fit perfectly: chop off those too long, stretch those too short.",
+            "A river bed that leads to the ocean.",
+            "A bed made from crustaceans."
+        ],
+        "answer": "A bed where people must fit perfectly: chop off those too long, stretch those too short.",
+        "n_times_asked": 1,
+        "n_times_answered_correctly": 1,
+        "last_asked": 1654095476.735554,
+        "skills": [
+            501,
+            601
+        ],
+        "tags": [
+            "mythology",
+            "bias"
+        ]
+    },
+    {
+        "id": 20,
+        "question_text": "When is a result statistically significant?",
+        "answers": [
+            "When a result is confirmed independently by several sources.",
+            "When it is unlikely that a result would have occurred under the null hypothesis, as defined by the p-value.",
+            "When it happens more than 50% of the time."
+        ],
+        "answer": "When it is unlikely that a result would have occurred under the null hypothesis, as defined by the p-value.",
+        "n_times_asked": 1,
+        "n_times_answered_correctly": 1,
+        "last_asked": 1654095485.856241,
+        "skills": [
+            500,
+            601,
+            602
+        ],
+        "tags": [
+            "statistics",
+            "data science"
+        ]
     }
 ]
