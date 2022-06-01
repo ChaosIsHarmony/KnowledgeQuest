@@ -6,7 +6,13 @@
     "stats": [2,5,6,7],
     "skills": [300],
     "duration": 7,
-    "xp_value": 10,
+    "xp_values": {
+      "2": 8,
+      "5": 5,
+      "6": 1,
+      "7": 1,
+      "300": 10
+    },
     "start_time": 0,
     "conditions_for_success": [ "Normal vibrato practice x3 for duration of quest." ],
     "status": 0,
@@ -20,7 +26,14 @@
     "stats": [2,5,6,7],
     "skills": [300,700],
     "duration": 28,
-    "xp_value": 100,
+    "xp_values": {
+      "2": 4,
+      "5": 20,
+      "6": 32,
+      "7": 12,
+      "300": 40,
+      "700": 120
+    },
     "start_time": 0,
     "conditions_for_success": [ "List to theme for Schindler's List x20.", "Divide the piece into several parts for individual practice.", "Practice each part x3, then the whole piece x3, 3 times/wk.", "Perform piece." ],
     "status": 0,

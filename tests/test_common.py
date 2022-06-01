@@ -19,7 +19,7 @@ class TestCommon(unittest2.TestCase):
         fileContents = common.load_file(common.TEST_QUESTS_FILEPATH)
 
         # test number of dummy entries
-        self.assertEqual(len(fileContents), 3)
+        self.assertEqual(len(fileContents), 2)
         # test fields have been parsed correctly
         self.assertEqual(fileContents[0]["id"], 1)
 

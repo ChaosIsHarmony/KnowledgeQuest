@@ -5,7 +5,9 @@ from ..enums.CoreStats import CoreStats
 from ..enums.Skills import Skills
 from ..enums.QuestDuration import QuestDuration
 from ..enums.QuestStatus import QuestStatus
-from typing import List
+from typing import Dict, List, TypeVar
+
+T = TypeVar("T")
 
 class IQuest(ABC):
 
@@ -55,9 +57,9 @@ class IQuest(ABC):
         pass
 
     @abstractmethod
-    def get_xp_value(self) -> int:
+    def get_xp_values(self) -> Dict[str,int]:
         pass
 
     @abstractmethod
-    def set_xp_value(self, xp: int) -> None:
+    def set_xp_values(self, xp: Dict[str,int]) -> None:
         pass

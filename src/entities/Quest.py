@@ -12,7 +12,7 @@ T = TypeVar("T")
 
 class Quest(IQuest, IJsonSerializable):
 
-    def __init__(self, idNum: int, title: str, description: str, stats: List[CoreStats], skills: List[Skills], duration: QuestDuration, conditions_for_success: List[str], status: QuestStatus, tags: List[str], notes: List[str], xp_value: int, startTime: time = time.time()):
+    def __init__(self, idNum: int, title: str, description: str, stats: List[CoreStats], skills: List[Skills], duration: QuestDuration, conditions_for_success: List[str], status: QuestStatus, tags: List[str], notes: List[str], xp_values: Dict[str, int], startTime: time = time.time()):
         self.__id = idNum
         self.__title = title
         self.__description = description
@@ -23,7 +23,7 @@ class Quest(IQuest, IJsonSerializable):
         self.__status = status
         self.__tags = tags
         self.__notes = notes
-        self.__xp_value = xp_value
+        self.__xp_values = xp_values
         self.__start_time = startTime
 
     def get_id(self) -> int:
@@ -72,11 +72,11 @@ class Quest(IQuest, IJsonSerializable):
     def set_notes(self, notes: List[str]) -> None:
         self.__notes = notes
 
-    def get_xp_value(self) -> int:
-        return self.__xp_value
+    def get_xp_values(self) -> Dict[str, int]:
+        return self.__xp_values
 
-    def set_xp_value(self, xp: int) -> None:
-        self.__xp_value = xp
+    def set_xp_values(self, xp: Dict[str, int]) -> None:
+        self.__xp_values = xp
 
     def to_json(self) -> Dict[str, T]:
         return self.__dict__

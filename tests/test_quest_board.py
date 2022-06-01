@@ -20,7 +20,7 @@ class TestQuestBoard(unittest2.TestCase):
         file_contents = common.load_file(common.TEST_QUESTS_FILEPATH)
 
         # test number of dummy entries
-        self.assertEqual(len(file_contents), 3)
+        self.assertEqual(len(file_contents), 2)
         # test fields have been parsed correctly
         self.assertEqual(file_contents[0]["id"], 1)
 
@@ -29,7 +29,7 @@ class TestQuestBoard(unittest2.TestCase):
         quests = qb.deserialize_quests(common.load_file(common.TEST_QUESTS_FILEPATH))
 
         # test number o fdummy entries
-        self.assertEqual(len(quests), 3)
+        self.assertEqual(len(quests), 2)
         # test proper parsing
         self.assertEqual(quests[0].get_id(), 1)
 
@@ -38,7 +38,7 @@ class TestQuestBoard(unittest2.TestCase):
         quests = qb.fetch_quests(common.TEST_QUESTS_FILEPATH)
 
         # test number o fdummy entries
-        self.assertEqual(len(quests), 3)
+        self.assertEqual(len(quests), 2)
         # test proper parsing
         self.assertEqual(quests[0].get_id(), 1)
 
