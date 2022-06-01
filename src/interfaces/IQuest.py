@@ -53,3 +53,11 @@ class IQuest(ABC):
     @abstractmethod
     def get_notes(self) -> List[str]:
         pass
+
+    @abstractmethod
+    def get_xp_value(self) -> int:
+        pass
+
+    @abstractmethod
+    def set_xp_value(self, xp: int) -> None:
+        pass

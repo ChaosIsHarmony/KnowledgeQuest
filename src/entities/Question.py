@@ -2,10 +2,11 @@ import json
 import time
 
 from ..enums.Skills import Skills
-from .IJsonSerializable import IJsonSerializable
-from .IQuestion import IQuestion
-from typing import Dict, List
+from ..interfaces.IJsonSerializable import IJsonSerializable
+from ..interfaces.IQuestion import IQuestion
+from typing import Dict, List, TypeVar
 
+T = TypeVar("T")
 
 class Question(IQuestion, IJsonSerializable):
 
@@ -68,7 +69,7 @@ class Question(IQuestion, IJsonSerializable):
     def set_tags(self, tags: List[str]) -> None:
         self.tags = tags
 
-    def to_json(self) -> None:
+    def to_json(self) -> Dict[str, T]:
         return self.__dict__
 
     def __str__(self) -> str:

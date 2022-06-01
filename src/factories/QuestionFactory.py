@@ -1,5 +1,5 @@
-from .IQuestion import IQuestion
-from .Question import Question
+from ..interfaces.IQuestion import IQuestion
+from ..entities.Question import Question
 
 class QuestionFactory:
 

@@ -3,8 +3,8 @@ import json
 import time
 
 from .. import common
-from ..entities.IQuest import IQuest
-from ..entities.QuestFactory import QuestFactory
+from ..interfaces.IQuest import IQuest
+from ..factories.QuestFactory import QuestFactory
 from ..enums.CoreStats import CoreStats, coreStatsMap
 from ..enums.Skills import Skills, skillsMap
 from ..enums.QuestOptions import QuestOptions as Options

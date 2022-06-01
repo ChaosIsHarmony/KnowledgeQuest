@@ -1,1 +1,292 @@
-[{"id": 6, "question_text": "What is the Dependency Inversion Principle?", "answers": ["Entities must depend on abstractions (interfaces), not concretions (implementations).", "The user should not depend on the software dev to fix their problems.", "Software should have zero dependencies."], "answer": "Entities must depend on abstractions (interfaces), not concretions (implementations).", "n_times_asked": 1, "n_times_answered_correctly": 1, "last_asked": 1653902241.014534, "skills": [500], "tags": ["software engineering", "programming", "technocraft"]}, {"id": 7, "question_text": "What is the Interface Segregation Principle?", "answers": ["No two interfaces should ever overlap.", "Interfaces should be narrow, not wide.", "Interfaces should define implementation details."], "answer": "Interfaces should be narrow, not wide.", "n_times_asked": 1, "n_times_answered_correctly": 1, "last_asked": 1653902248.5975213, "skills": [500], "tags": ["software engineering", "programming", "technocraft"]}, {"id": 5, "question_text": "What does the 'D' in S.O.L.I.D. stand for?", "answers": ["Denial of Service", "Dependency Inversion Principle", "Dual-Use Principle"], "answer": "Dependency Inversion Principle", "n_times_asked": 1, "n_times_answered_correctly": 1, "last_asked": 1653902264.0603933, "skills": [500], "tags": ["software engineering", "programming", "technocraft"]}, {"id": 2, "question_text": "What does the 'O' in S.O.L.I.D. stand for?", "answers": ["Only Once Principle", "Open-Closed Principle", "Overuse Principle"], "answer": "Open/Closed Principle", "n_times_asked": 2, "n_times_answered_correctly": 2, "last_asked": 1653902269.204359, "skills": [500], "tags": ["software engineering", "programming", "technocraft"]}, {"id": 4, "question_text": "What does the 'I' in S.O.L.I.D. stand for?", "answers": ["Interest First", "Interface Segregation Principle", "Inversion of Control"], "answer": "Interface Segregation Principle", "n_times_asked": 2, "n_times_answered_correctly": 2, "last_asked": 1653902278.5804875, "skills": [500], "tags": ["software engineering", "programming", "technocraft"]}, {"id": 11, "question_text": "What is Modus Tollens?", "answers": ["Denying the consequent: P -> Q AND ~Q, thus ~P.", "Affirming the antecedent: P -> Q AND P, thus Q.", "Inversion: P -> Q AND Q -> P, thus Q AND P."], "answer": "Denying the consequent: P -> Q AND ~Q, thus ~P.", "n_times_asked": 1, "n_times_answered_correctly": 1, "last_asked": 1653904804.606423, "skills": [500], "tags": ["math", "logic"]}, {"id": 12, "question_text": "What is the contrapositive?", "answers": ["P -> Q, thus ~P -> ~Q.", "P -> Q, thus ~Q -> P.", "P -> Q, thus ~Q -> ~P."], "answer": "P -> Q, thus ~Q -> ~P.", "n_times_asked": 1, "n_times_answered_correctly": 1, "last_asked": 1653904813.7168868, "skills": [500], "tags": ["math", "logic"]}, {"id": 10, "question_text": "What is Modus Ponens?", "answers": ["Inversion: P -> Q AND Q -> P, thus Q AND P.", "Denying the consequent: P -> Q AND ~Q, thus ~P.", "Affirming the antecedent: P -> Q AND P, thus Q."], "answer": "Affirming the antecedent: P -> Q AND P, thus Q.", "n_times_asked": 1, "n_times_answered_correctly": 1, "last_asked": 1653904822.7637367, "skills": [500], "tags": ["math", "logic"]}, {"id": 8, "question_text": "What is the Liskov Substitution Principle?", "answers": ["Subclasses should be identical to their base class.", "Every subclass should function as a substitute for their base class.", "Subclasses should never be declared as types of their base class"], "answer": "Every subclass should function as a substitute for their base class.", "n_times_asked": 2, "n_times_answered_correctly": 2, "last_asked": 1653904840.0571415, "skills": [500], "tags": ["software engineering", "programming", "technocraft"]}, {"id": 13, "question_text": "What is currying wrt functions?", "answers": ["It is the technique of converting a function that takes multiple arguments into a sequence of functions that each takes a single argument.", "It is the technique whereby you pass a single vector as a parameter instead of all the elements of said vectors as individual parameters.", "It is the technique of taking several functions a coalescing them into a single function."], "answer": "It is the technique of converting a function that takes multiple arguments into a sequence of functions that each takes a single argument.", "n_times_asked": 1, "n_times_answered_correctly": 1, "last_asked": 1653904883.275381, "skills": [500], "tags": ["math", "functional programming"]}, {"id": 14, "question_text": "What is Bayes' Theorem?", "answers": ["P(A) = P(A|B) * P(B|A)/P(B); Prior = Posterior * Likelihood/Marginal", "P(A|B) = P(A) * P(B|A)/P(B); Posterior = Prior * Likelihood/Marginal", "P(B|A) = P(A) * P(A|B)/P(B); Likelihood = Prior * Posterior/Marginal"], "answer": "P(A|B) = P(A) * P(B|A)/P(B); Posterior = Prior * Likelihood/Marginal", "n_times_asked": 1, "n_times_answered_correctly": 1, "last_asked": 1653904890.9859622, "skills": [500], "tags": ["math", "statistics", "machine learning"]}, {"id": 1, "question_text": "What does the 'S' in S.O.L.I.D. stand for?", "answers": ["Simplicity is Key", "Single Responsibility Principle", "Save Frequently"], "answer": "Single Responsibility Principle", "n_times_asked": 3, "n_times_answered_correctly": 3, "last_asked": 1653904902.457626, "skills": [500], "tags": ["software engineering", "programming", "technocraft"]}, {"id": 9, "question_text": "What is the Open-Closed Principle?", "answers": ["All entities should have get methods for all fields.", "Entities should be open for extension, but closed for modification.", "All objects should be closed to save memory."], "answer": "Entities should be open for extension, but closed for modification.", "n_times_asked": 2, "n_times_answered_correctly": 2, "last_asked": 1653904909.1235795, "skills": [500], "tags": ["software engineering", "programming", "technocraft"]}, {"id": 3, "question_text": "What does the 'L' in S.O.L.I.D. stand for?", "answers": ["Liskov Substitution Principle", "Last In Principle", "Later Principle"], "answer": "Liskov Substitution Principle", "n_times_asked": 3, "n_times_answered_correctly": 3, "last_asked": 1653904912.3781226, "skills": [500], "tags": ["software engineering", "programming", "technocraft"]}]
+[
+    {
+        "id": 14,
+        "question_text": "What is Bayes' Theorem?",
+        "answers": [
+            "P(A) = P(A|B) * P(B|A)/P(B); Prior = Posterior * Likelihood/Marginal",
+            "P(A|B) = P(A) * P(B|A)/P(B); Posterior = Prior * Likelihood/Marginal",
+            "P(B|A) = P(A) * P(A|B)/P(B); Likelihood = Prior * Posterior/Marginal"
+        ],
+        "answer": "P(A|B) = P(A) * P(B|A)/P(B); Posterior = Prior * Likelihood/Marginal",
+        "n_times_asked": 1,
+        "n_times_answered_correctly": 1,
+        "last_asked": 1653904890.9859622,
+        "skills": [
+            500
+        ],
+        "tags": [
+            "math",
+            "statistics",
+            "machine learning"
+        ]
+    },
+    {
+        "id": 1,
+        "question_text": "What does the 'S' in S.O.L.I.D. stand for?",
+        "answers": [
+            "Simplicity is Key",
+            "Single Responsibility Principle",
+            "Save Frequently"
+        ],
+        "answer": "Single Responsibility Principle",
+        "n_times_asked": 3,
+        "n_times_answered_correctly": 3,
+        "last_asked": 1653904902.457626,
+        "skills": [
+            500
+        ],
+        "tags": [
+            "software engineering",
+            "programming",
+            "technocraft"
+        ]
+    },
+    {
+        "id": 9,
+        "question_text": "What is the Open-Closed Principle?",
+        "answers": [
+            "All entities should have get methods for all fields.",
+            "Entities should be open for extension, but closed for modification.",
+            "All objects should be closed to save memory."
+        ],
+        "answer": "Entities should be open for extension, but closed for modification.",
+        "n_times_asked": 2,
+        "n_times_answered_correctly": 2,
+        "last_asked": 1653904909.1235795,
+        "skills": [
+            500
+        ],
+        "tags": [
+            "software engineering",
+            "programming",
+            "technocraft"
+        ]
+    },
+    {
+        "id": 3,
+        "question_text": "What does the 'L' in S.O.L.I.D. stand for?",
+        "answers": [
+            "Liskov Substitution Principle",
+            "Last In Principle",
+            "Later Principle"
+        ],
+        "answer": "Liskov Substitution Principle",
+        "n_times_asked": 3,
+        "n_times_answered_correctly": 3,
+        "last_asked": 1653904912.3781226,
+        "skills": [
+            500
+        ],
+        "tags": [
+            "software engineering",
+            "programming",
+            "technocraft"
+        ]
+    },
+    {
+        "id": 2,
+        "question_text": "What does the 'O' in S.O.L.I.D. stand for?",
+        "answers": [
+            "Only Once Principle",
+            "Overuse Principle",
+            "Open-Closed Principle"
+        ],
+        "answer": "Open-Closed Principle",
+        "n_times_asked": 3,
+        "n_times_answered_correctly": 3,
+        "last_asked": 1653981686.2074034,
+        "skills": [
+            500
+        ],
+        "tags": [
+            "software engineering",
+            "programming",
+            "technocraft"
+        ]
+    },
+    {
+        "id": 5,
+        "question_text": "What does the 'D' in S.O.L.I.D. stand for?",
+        "answers": [
+            "Dual-Use Principle",
+            "Denial of Service",
+            "Dependency Inversion Principle"
+        ],
+        "answer": "Dependency Inversion Principle",
+        "n_times_asked": 2,
+        "n_times_answered_correctly": 2,
+        "last_asked": 1653981707.4254885,
+        "skills": [
+            500
+        ],
+        "tags": [
+            "software engineering",
+            "programming",
+            "technocraft"
+        ]
+    },
+    {
+        "id": 12,
+        "question_text": "What is the contrapositive?",
+        "answers": [
+            "P -> Q, thus ~Q -> P.",
+            "P -> Q, thus ~Q -> ~P.",
+            "P -> Q, thus ~P -> ~Q."
+        ],
+        "answer": "P -> Q, thus ~Q -> ~P.",
+        "n_times_asked": 2,
+        "n_times_answered_correctly": 2,
+        "last_asked": 1653981714.134926,
+        "skills": [
+            500
+        ],
+        "tags": [
+            "math",
+            "logic"
+        ]
+    },
+    {
+        "id": 8,
+        "question_text": "What is the Liskov Substitution Principle?",
+        "answers": [
+            "Subclasses should never be declared as types of their base class",
+            "Subclasses should be identical to their base class.",
+            "Every subclass should function as a substitute for their base class."
+        ],
+        "answer": "Every subclass should function as a substitute for their base class.",
+        "n_times_asked": 3,
+        "n_times_answered_correctly": 3,
+        "last_asked": 1653981720.9972718,
+        "skills": [
+            500
+        ],
+        "tags": [
+            "software engineering",
+            "programming",
+            "technocraft"
+        ]
+    },
+    {
+        "id": 11,
+        "question_text": "What is Modus Tollens?",
+        "answers": [
+            "Affirming the antecedent: P -> Q AND P, thus Q.",
+            "Denying the consequent: P -> Q AND ~Q, thus ~P.",
+            "Inversion: P -> Q AND Q -> P, thus Q AND P."
+        ],
+        "answer": "Denying the consequent: P -> Q AND ~Q, thus ~P.",
+        "n_times_asked": 2,
+        "n_times_answered_correctly": 2,
+        "last_asked": 1653981739.900985,
+        "skills": [
+            500
+        ],
+        "tags": [
+            "math",
+            "logic"
+        ]
+    },
+    {
+        "id": 4,
+        "question_text": "What does the 'I' in S.O.L.I.D. stand for?",
+        "answers": [
+            "Interface Segregation Principle",
+            "Inversion of Control",
+            "Interest First"
+        ],
+        "answer": "Interface Segregation Principle",
+        "n_times_asked": 3,
+        "n_times_answered_correctly": 3,
+        "last_asked": 1653981744.160204,
+        "skills": [
+            500
+        ],
+        "tags": [
+            "software engineering",
+            "programming",
+            "technocraft"
+        ]
+    },
+    {
+        "id": 10,
+        "question_text": "What is Modus Ponens?",
+        "answers": [
+            "Affirming the antecedent: P -> Q AND P, thus Q.",
+            "Denying the consequent: P -> Q AND ~Q, thus ~P.",
+            "Inversion: P -> Q AND Q -> P, thus Q AND P."
+        ],
+        "answer": "Affirming the antecedent: P -> Q AND P, thus Q.",
+        "n_times_asked": 2,
+        "n_times_answered_correctly": 2,
+        "last_asked": 1653981750.9643674,
+        "skills": [
+            500
+        ],
+        "tags": [
+            "math",
+            "logic"
+        ]
+    },
+    {
+        "id": 13,
+        "question_text": "What is currying wrt functions?",
+        "answers": [
+            "It is the technique of converting a function that takes multiple arguments into a sequence of functions that each takes a single argument.",
+            "It is the technique of taking several functions a coalescing them into a single function.",
+            "It is the technique whereby you pass a single vector as a parameter instead of all the elements of said vectors as individual parameters."
+        ],
+        "answer": "It is the technique of converting a function that takes multiple arguments into a sequence of functions that each takes a single argument.",
+        "n_times_asked": 2,
+        "n_times_answered_correctly": 2,
+        "last_asked": 1653981760.4297361,
+        "skills": [
+            500
+        ],
+        "tags": [
+            "math",
+            "functional programming"
+        ]
+    },
+    {
+        "id": 7,
+        "question_text": "What is the Interface Segregation Principle?",
+        "answers": [
+            "No two interfaces should ever overlap.",
+            "Interfaces should define implementation details.",
+            "Interfaces should be narrow, not wide."
+        ],
+        "answer": "Interfaces should be narrow, not wide.",
+        "n_times_asked": 2,
+        "n_times_answered_correctly": 2,
+        "last_asked": 1653981770.4962893,
+        "skills": [
+            500
+        ],
+        "tags": [
+            "software engineering",
+            "programming",
+            "technocraft"
+        ]
+    },
+    {
+        "id": 6,
+        "question_text": "What is the Dependency Inversion Principle?",
+        "answers": [
+            "Software should have zero dependencies.",
+            "The user should not depend on the software dev to fix their problems.",
+            "Entities must depend on abstractions (interfaces), not concretions (implementations)."
+        ],
+        "answer": "Entities must depend on abstractions (interfaces), not concretions (implementations).",
+        "n_times_asked": 2,
+        "n_times_answered_correctly": 2,
+        "last_asked": 1653981783.9376774,
+        "skills": [
+            500
+        ],
+        "tags": [
+            "software engineering",
+            "programming",
+            "technocraft"
+        ]
+    }
+]

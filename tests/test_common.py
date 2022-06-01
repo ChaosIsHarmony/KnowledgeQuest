@@ -11,6 +11,8 @@ import unittest2
 
 import src.common as common
 
+from src.modes import Inquisitor as inq
+
 class TestCommon(unittest2.TestCase):
 
     def test_load_file_quests(self):
@@ -33,7 +35,8 @@ class TestCommon(unittest2.TestCase):
 
     def test_write_file(self):
         fileContents = common.load_file(common.TEST_QUESTIONS_FILEPATH)
-        common.write_file(fileContents, common.TMP_FILEPATH)
+        questions = inq.deserialize_questions(fileContents)
+        common.write_file(questions, common.TMP_FILEPATH)
         newFileContents = common.load_file(common.TMP_FILEPATH)
 
         self.assertEqual(fileContents, newFileContents)

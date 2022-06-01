@@ -2,8 +2,8 @@ import json
 import random
 
 from .. import common
-from ..entities.IQuestion import IQuestion
-from ..entities.QuestionFactory import QuestionFactory
+from ..interfaces.IQuestion import IQuestion
+from ..factories.QuestionFactory import QuestionFactory
 
 from functools import cmp_to_key
 from typing import List

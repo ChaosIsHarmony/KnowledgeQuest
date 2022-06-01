@@ -14,17 +14,17 @@ class Skills(enum.Enum):
     FIGHT_CONCEPTS = 504
     LINGUISTICS = 505
     SURVIVAL_CONCEPTS = 506
-    FINANCE = 507
+    ECONOMICS = 507
     # WIS (600)
     ACUMEN = 600
     AWARENESS = 601
     INSIGHT = 602
     SURVIVAL_APPLICATIONS = 603
+    FIGHT_APPLICATIONS = 604
     # CHA (700)
-    MUSIC_PERFORMANCE = 700
-    FIGHT_PERFORMANCE = 701
-    PERSUASION = 702
-    PEOPLE_READING = 703
+    PERFORMANCE = 700
+    PERSUASION = 701
+    PEOPLE_READING = 702
     # WIL (800)
 
 
@@ -37,13 +37,13 @@ skillsMap = {
     Skills.FIGHT_CONCEPTS.value: "Fight-Concepts",
     Skills.LINGUISTICS.value: "Linguistics",
     Skills.SURVIVAL_CONCEPTS.value: "Survival-Concepts",
-    Skills.FINANCE.value: "Finance",
+    Skills.ECONOMICS.value: "Economics",
     Skills.ACUMEN.value: "Acumen",
     Skills.AWARENESS.value: "Awareness",
     Skills.INSIGHT.value: "Insight",
+    Skills.FIGHT_APPLICATIONS.value: "Fight-Applications",
     Skills.SURVIVAL_APPLICATIONS.value: "Survival-Applications",
-    Skills.MUSIC_PERFORMANCE.value: "Music-Performance",
-    Skills.FIGHT_PERFORMANCE.value: "Fight-Performance",
+    Skills.PERFORMANCE.value: "Performance",
     Skills.PERSUASION.value: "Persuasion",
     Skills.PEOPLE_READING.value: "People Reading"
 }

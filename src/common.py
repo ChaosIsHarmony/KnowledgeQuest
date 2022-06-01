@@ -1,13 +1,13 @@
 import json
 
+from .interfaces.IQuestion import IQuestion
 from typing import List
-from .entities.IQuestion import IQuestion
 
 QUESTS_FILEPATH = "./data/quests.json"
-TEST_QUESTS_FILEPATH = "./data/test_quests.json"
+TEST_QUESTS_FILEPATH = "./tests/data/test_quests.json"
 QUESTIONS_FILEPATH = "./data/questions.json"
-TEST_QUESTIONS_FILEPATH = "./data/test_questions.json"
-TMP_FILEPATH = "./data/tmp.json"
+TEST_QUESTIONS_FILEPATH = "./tests/data/test_questions.json"
+TMP_FILEPATH = "./tests/data/tmp.json"
 
 
 def load_file(path: str) -> List[str]:

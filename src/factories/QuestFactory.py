@@ -1,5 +1,5 @@
-from .IQuest import IQuest
-from .Quest import Quest
+from ..interfaces.IQuest import IQuest
+from ..entities.Quest import Quest
 
 class QuestFactory:
 
@@ -15,6 +15,7 @@ class QuestFactory:
                      attrDict["status"],
                      attrDict["tags"],
                      attrDict["notes"],
-                     attrDict["start_time"])
+                     attrDict["start_time"],
+                     attrDict["xp_value"])
 
 

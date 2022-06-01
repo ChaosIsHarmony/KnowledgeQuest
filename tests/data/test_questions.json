@@ -5,7 +5,7 @@
     "answers": [ "Single Responsibility Principle", "Save Frequently", "Simplicity is Key" ],
     "answer": "Single Responsibility Principle",
     "n_times_asked": 10,
-    "n_times_correctly_answered": 10,
+    "n_times_answered_correctly": 10,
     "last_asked": 0,
     "skills": [ 500 ],
     "tags": [ "software engineering", "programming", "technocraft" ]
@@ -16,7 +16,7 @@
     "answers": [ "Overuse Principle", "Open/Closed Principle", "Only Once Principle" ],
     "answer": "Open/Closed Principle",
     "n_times_asked": 10,
-    "n_times_correctly_answered": 6,
+    "n_times_answered_correctly": 6,
     "last_asked": 1453726425.7762244,
     "skills": [ 500 ],
     "tags": [ "software engineering", "programming", "technocraft" ]
@@ -27,7 +27,7 @@
     "answers": [ "Last In Principle", "Later Principle", "Liskov Substitution Principle" ],
     "answer": "Liskov Substitution Principle",
     "n_times_asked": 10,
-    "n_times_correctly_answered": 6,
+    "n_times_answered_correctly": 6,
     "last_asked": 1553726425.7762244,
     "skills": [ 500 ],
     "tags": [ "software engineering", "programming", "technocraft" ]
@@ -38,7 +38,7 @@
     "answers": [ "Inversion of Control", "Interface Segregation Principle", "Interest First" ],
     "answer": "Interface Segregation Principle",
     "n_times_asked": 10,
-    "n_times_correctly_answered": 6,
+    "n_times_answered_correctly": 6,
     "last_asked": 1653726425.7762244,
     "skills": [ 500 ],
     "tags": [ "software engineering", "programming", "technocraft" ]
@@ -49,7 +49,7 @@
     "answers": [ "Dependency Inversion Principle", "Dual-Use Principle", "Denial of Service" ],
     "answer": "Dependency Inversion Principle",
     "n_times_asked": 10,
-    "n_times_correctly_answered": 5,
+    "n_times_answered_correctly": 5,
     "last_asked": 1653726425.7762244,
     "skills": [ 500 ],
     "tags": [ "software engineering", "programming", "technocraft" ]
@@ -60,7 +60,7 @@
     "answers": [ "Entities must depend on abstractions (interfaces), not concretions (implementations).", "The user should not depend on the software dev to fix their problems.", "Software should have zero dependencies." ],
     "answer": "Entities must depend on abstractions (interfaces), not concretions (implementations).",
     "n_times_asked": 10,
-    "n_times_correctly_answered": 5,
+    "n_times_answered_correctly": 5,
     "last_asked": 0,
     "skills": [ 500 ],
     "tags": [ "software engineering", "programming", "technocraft" ]
@@ -71,7 +71,7 @@
     "answers": [ "Interfaces should be narrow, not wide.", "No two interfaces should ever overlap.", "Interfaces should define implementation details." ],
     "answer": "Interfaces should be narrow, not wide.",
     "n_times_asked": 10,
-    "n_times_correctly_answered": 4,
+    "n_times_answered_correctly": 4,
     "last_asked": 0,
     "skills": [ 500 ],
     "tags": [ "software engineering", "programming", "technocraft" ]
@@ -82,7 +82,7 @@
     "answers": [ "Every subclass should function as a substitute for their base class.", "Subclasses should never be declared as types of their base class", "Subclasses should be identical to their base class." ],
     "answer": "Every subclass should function as a substitute for their base class.",
     "n_times_asked": 10,
-    "n_times_correctly_answered": 3,
+    "n_times_answered_correctly": 3,
     "last_asked": 0,
     "skills": [ 500 ],
     "tags": [ "software engineering", "programming", "technocraft" ]
@@ -93,7 +93,7 @@
     "answers": [ "All objects should be closed to save memory.", "All entities should have get methods for all fields.", "Entities should be open for extension, but closed for modification." ],
     "answer": "Entities should be open for extension, but closed for modification.",
     "n_times_asked": 10,
-    "n_times_correctly_answered": 2,
+    "n_times_answered_correctly": 2,
     "last_asked": 0,
     "skills": [ 500 ],
     "tags": [ "software engineering", "programming", "technocraft" ]
