@@ -16,6 +16,14 @@ class IQuest(ABC):
         pass
 
     @abstractmethod
+    def get_subquests(self) -> List[int]:
+        pass
+
+    @abstractmethod
+    def get_superquests(self) -> List[int]:
+        pass
+
+    @abstractmethod
     def get_title(self) -> str:
         pass
 

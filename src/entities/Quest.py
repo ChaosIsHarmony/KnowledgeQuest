@@ -12,8 +12,10 @@ T = TypeVar("T")
 
 class Quest(IQuest, IJsonSerializable):
 
-    def __init__(self, idNum: int, title: str, description: str, stats: List[CoreStats], skills: List[Skills], duration: QuestDuration, conditions_for_success: List[str], status: QuestStatus, tags: List[str], notes: List[str], xp_values: Dict[str, int], startTime: time = time.time()):
+    def __init__(self, idNum: int, subquests: List[int], superquests: List[int], title: str, description: str, stats: List[CoreStats], skills: List[Skills], duration: QuestDuration, conditions_for_success: List[str], status: QuestStatus, tags: List[str], notes: List[str], xp_values: Dict[str, int], startTime: time = time.time()):
         self.__id = idNum
+        self.__subquests = subquests
+        self.__superquests = superquests
         self.__title = title
         self.__description = description
         self.__stats = stats
@@ -28,6 +30,12 @@ class Quest(IQuest, IJsonSerializable):
 
     def get_id(self) -> int:
         return self.__id
+
+    def get_subquests(self) -> List[int]:
+        return self.__subquests
+
+    def get_superquests(self) -> List[int]:
+        return self.__superquests
 
     def get_title(self) -> str:
         return self.__title

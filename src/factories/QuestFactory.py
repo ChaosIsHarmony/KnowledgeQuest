@@ -6,6 +6,8 @@ class QuestFactory:
     @classmethod
     def from_dict(cls, attrDict) -> IQuest:
         return Quest(attrDict["id"],
+                     attrDict["subquests"],
+                     attrDict["superquests"],
                      attrDict["title"],
                      attrDict["description"],
                      attrDict["stats"],
