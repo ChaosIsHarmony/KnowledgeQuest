@@ -43,5 +43,28 @@
     "status": 0,
     "tags": [ "music", "violin", "performance" ],
     "notes": []
+  },
+  {
+    "id": 3,
+    "subquests": [],
+    "superquests": [],
+    "title": "Make Quest Updater",
+    "description": "Implement the quest updater in the QuestBoard mode.",
+    "stats": [2,5,6,7],
+    "skills": [300,700],
+    "duration": 1,
+    "xp_values": {
+      "2": 4,
+      "5": 20,
+      "6": 32,
+      "7": 12,
+      "300": 40,
+      "700": 120
+    },
+    "start_time": 0,
+    "conditions_for_success": [ "Implement.", "Test." ],
+    "status": 1,
+    "tags": [ "stuff" ],
+    "notes": []
   }
 ]

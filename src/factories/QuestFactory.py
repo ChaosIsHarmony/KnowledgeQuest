@@ -17,7 +17,7 @@ class QuestFactory:
                      attrDict["status"],
                      attrDict["tags"],
                      attrDict["notes"],
-                     attrDict["start_time"],
-                     attrDict["xp_values"])
+                     attrDict["xp_values"],
+                     attrDict["start_time"])
 
 

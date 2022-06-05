@@ -3,7 +3,6 @@ import time
 from abc import ABC, abstractmethod
 from ..enums.CoreStats import CoreStats
 from ..enums.Skills import Skills
-from ..enums.QuestDuration import QuestDuration
 from ..enums.QuestStatus import QuestStatus
 from typing import Dict, List, TypeVar
 
@@ -40,7 +39,7 @@ class IQuest(ABC):
         pass
 
     @abstractmethod
-    def get_duration(self) -> QuestDuration:
+    def get_duration(self) -> int:
         """In days"""
         pass
 

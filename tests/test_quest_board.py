@@ -50,5 +50,12 @@ class TestQuestBoard(unittest2.TestCase):
         self.assertEqual(skillsAffected2, "STEM, Linguistics")
 
 
+    def test_quest_requires_update(self):
+        quests = qb.fetch_quests(common.TEST_QUESTS_FILEPATH)
+        questsNeedUpdate = list(filter(lambda q: qb.quest_requires_update(q), quests))
+
+        self.assertEqual(len(questsNeedUpdate), 1)
+
+
 if __name__ == "__main__":
     unittest2.main()

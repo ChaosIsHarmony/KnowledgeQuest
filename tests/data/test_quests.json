@@ -1,11 +1,13 @@
 [
   {
     "id": 1,
+    "subquests": [],
+    "superquests": [],
     "title": "Vibrato Challenge",
     "description": "Improve the quality of your vibrato.",
     "stats": [2,5,6,7],
     "skills": [300],
-    "duration": 7,
+    "duration": 1,
     "xp_values": {
       "2": 8,
       "5": 5,
@@ -13,14 +15,16 @@
       "7": 1,
       "300": 10
     },
-    "start_time": 0,
+    "start_time": 1653228559.4072394,
     "conditions_for_success": [ "Normal vibrato practice x3 for duration of quest." ],
-    "status": 0,
+    "status": 1,
     "tags": [ "music", "violin", "vibrato" ],
     "notes": []
   },
   {
     "id": 2,
+    "subquests": [],
+    "superquests": [],
     "title": "Schindler's List Violin",
     "description": "Learn the theme for Schindler's List.",
     "stats": [2,5,6,7],

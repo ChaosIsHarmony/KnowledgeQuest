@@ -1,4 +1,4 @@
-import datetime
+from datetime import datetime, timedelta
 import json
 import time
 
@@ -7,7 +7,7 @@ from ..interfaces.IQuest import IQuest
 from ..enums.CoreStats import CoreStats, coreStatsMap
 from ..enums.Skills import Skills, skillsMap
 from ..enums.QuestOptions import QuestOptions as Options
-from ..enums.QuestStatus import QuestStatus as Status
+from ..enums.QuestStatus import QuestStatus as Status, statusMap
 
 from typing import Dict, List, TypeVar
 
@@ -23,8 +23,8 @@ def fetch_quests(path: str) -> List[IQuest]:
 
 def get_end_date(start: time, duration: int) -> str:
     """YYYY-MM-DD"""
-    date = datetime.datetime.fromtimestamp(start)
-    endDate = date + datetime.timedelta(days=duration)
+    date = datetime.fromtimestamp(start)
+    endDate = date + timedelta(days=duration)
     return f"{endDate.year}-{endDate.month}-{endDate.day}"
 
 
@@ -58,9 +58,39 @@ def format_quests(ongoingQuests: List[IQuest]) -> List[str]:
     return formattedQuests
 
 
+def quest_requires_update(quest: IQuest) -> bool:
+    # status is not on-going
+    if quest.get_status() != Status.ON_GOING.value:
+        return False
+
+    # get dates for comparison (quest's end date and today's date)
+    date = datetime.fromtimestamp(quest.get_start_time())
+    endDate = date + timedelta(days=quest.get_duration())
+    currentDate = datetime.now()
+
+    return endDate < currentDate
+
+
+def display_quests_requiring_status_update(unformattedQuests: List[IQuest]) -> None:
+    questsToUpdate = list(filter(lambda q: quest_requires_update(q), unformattedQuests))
+
+    for quest in questsToUpdate:
+        formattedQuest = format_quests([quest])[0]
+        print(formattedQuest)
+        status = -1
+        while status != Status.SUCCESS.value and status != Status.FAILURE.value:
+            status = int(input("Success (2) or Failure (3)? "))
+
+        quest.set_status(statusMap[status])
+        print("Status updated!")
+
+    print("All quests are up-to-date.")
+
+
+
 
 def display_ongoing_quests(unformattedQuests: List[IQuest]) -> None:
-    ongoingQuests = list(filter(lambda x: x.get_status() == Status.ON_GOING.value, unformattedQuests))
+    ongoingQuests = list(filter(lambda q: q.get_status() == Status.ON_GOING.value, unformattedQuests))
     formattedQuests = format_quests(ongoingQuests)
 
     for quest in formattedQuests:
@@ -68,18 +98,23 @@ def display_ongoing_quests(unformattedQuests: List[IQuest]) -> None:
 
 
 def execute_option(option: Options) -> None:
-    pass
+    if option == Options.ADD:
+        create_new_quest()
+        return
 
 
 def run() -> None:
     unformattedQuests = fetch_quests(common.QUESTS_FILEPATH)
 
+    # Check if a quest has recently reached its time limit
+    display_quests_requiring_status_update(unformattedQuests)
+
     # Display ON-GOING quests & their statuses
-    #   A Long IQuest is composed of multiple Medium IQuests
-    #   A Medium IQuest is composed of multiple Short IQuests
-    #   Short IQuests = approx. 1 week
-    #   Medium IQuests = approx. 1 month
-    #   Long IQuests are multi-month
+    #   A Long Quest is composed of multiple Medium Quests
+    #   A Medium Quest is composed of multiple Short Quests
+    #   Short Quests = approx. 1 week
+    #   Medium Quests = approx. 1 month
+    #   Long Quests are multi-month
     display_ongoing_quests(unformattedQuests)
 
     # Query user's desired action
