@@ -1,70 +1,114 @@
 [
-  {
-    "id": 1,
-    "subquests": [],
-    "superquests": [],
-    "title": "Vibrato Challenge",
-    "description": "Improve the quality of your vibrato.",
-    "stats": [2,5,6,7],
-    "skills": [300],
-    "duration": 7,
-    "xp_values": {
-      "2": 8,
-      "5": 5,
-      "6": 1,
-      "7": 1,
-      "300": 10
+    {
+        "id": 1,
+        "subquests": [],
+        "superquests": [],
+        "title": "Vibrato Challenge",
+        "description": "Improve the quality of your vibrato.",
+        "stats": [
+            2,
+            5,
+            6,
+            7
+        ],
+        "skills": [
+            300
+        ],
+        "duration": 7,
+        "conditions_for_success": [
+            "Normal vibrato practice x3 for duration of quest."
+        ],
+        "status": 0,
+        "tags": [
+            "music",
+            "violin",
+            "vibrato"
+        ],
+        "notes": [],
+        "xp_values": {
+            "2": 3,
+            "5": 2,
+            "6": 1,
+            "7": 1,
+            "300": 3
+        },
+        "start_time": 0
     },
-    "start_time": 0,
-    "conditions_for_success": [ "Normal vibrato practice x3 for duration of quest." ],
-    "status": 0,
-    "tags": [ "music", "violin", "vibrato" ],
-    "notes": []
-  },
-  {
-    "id": 2,
-    "subquests": [],
-    "superquests": [],
-    "title": "Schindler's List Violin",
-    "description": "Learn the theme for Schindler's List.",
-    "stats": [2,5,6,7],
-    "skills": [300,700],
-    "duration": 28,
-    "xp_values": {
-      "2": 4,
-      "5": 20,
-      "6": 32,
-      "7": 12,
-      "300": 40,
-      "700": 120
+    {
+        "id": 3,
+        "subquests": [],
+        "superquests": [],
+        "title": "Practice Boxing Rhythm Footwork",
+        "description": "Practice the two modes of rhythm footwork Daili taught.",
+        "stats": [
+            0,
+            1,
+            2,
+            5
+        ],
+        "skills": [
+            301
+        ],
+        "duration": 7,
+        "conditions_for_success": [
+            "10x stationary version daily",
+            "10x 3-beat version daily"
+        ],
+        "status": 1,
+        "tags": [
+            "striking",
+            "combat",
+            "fighting",
+            "martial arts"
+        ],
+        "notes": [],
+        "xp_values": {
+            "0": 1,
+            "1": 1,
+            "2": 3,
+            "5": 2,
+            "301": 3
+        },
+        "start_time": 1654415741.5605016
     },
-    "start_time": 0,
-    "conditions_for_success": [ "List to theme for Schindler's List x20.", "Divide the piece into several parts for individual practice.", "Practice each part x3, then the whole piece x3, 3 times/wk.", "Perform piece." ],
-    "status": 0,
-    "tags": [ "music", "violin", "performance" ],
-    "notes": []
-  },
-  {
-    "id": 3,
-    "subquests": [],
-    "superquests": [],
-    "title": "Make Quest Updater",
-    "description": "Implement the quest updater in the QuestBoard mode.",
-    "stats": [2,5,6,7],
-    "skills": [300,700],
-    "duration": 1,
-    "xp_values": {
-      "2": 4,
-      "5": 20,
-      "6": 32,
-      "7": 12,
-      "300": 40,
-      "700": 120
-    },
-    "start_time": 0,
-    "conditions_for_success": [ "Implement.", "Test." ],
-    "status": 1,
-    "tags": [ "stuff" ],
-    "notes": []
-  }
+    {
+        "id": 2,
+        "subquests": [],
+        "superquests": [],
+        "title": "Schindler's List Violin",
+        "description": "Learn the theme for Schindler's List.",
+        "stats": [
+            2,
+            5,
+            6,
+            7
+        ],
+        "skills": [
+            300,
+            700
+        ],
+        "duration": 28,
+        "conditions_for_success": [
+            "List to theme for Schindler's List x20.",
+            "Divide the piece into several parts for individual practice.",
+            "Practice each part x3, then the whole piece x3, 3 times/wk.",
+            "Perform piece."
+        ],
+        "status": 0,
+        "tags": [
+            "music",
+            "violin",
+            "performance"
+        ],
+        "notes": [],
+        "xp_values": {
+            "2": 4,
+            "5": 8,
+            "6": 12,
+            "7": 8,
+            "300": 8,
+            "700": 12
+        },
+        "start_time": 0
+    }
 ]

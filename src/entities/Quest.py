@@ -12,78 +12,79 @@ T = TypeVar("T")
 class Quest(IQuest, IJsonSerializable):
 
     def __init__(self, idNum: int, subquests: List[int], superquests: List[int], title: str, description: str, stats: List[CoreStats], skills: List[Skills], duration: int, conditions_for_success: List[str], status: QuestStatus, tags: List[str], notes: List[str], xp_values: Dict[str, int], startTime: time):
-        self.__id = idNum
-        self.__subquests = subquests
-        self.__superquests = superquests
-        self.__title = title
-        self.__description = description
-        self.__stats = stats
-        self.__skills = skills
-        self.__duration = duration
-        self.__conditions_for_success = conditions_for_success
-        self.__status = status
-        self.__tags = tags
-        self.__notes = notes
-        self.__xp_values = xp_values
-        self.__start_time = startTime
+        self.id = idNum
+        self.subquests = subquests
+        self.superquests = superquests
+        self.title = title
+        self.description = description
+        self.stats = stats
+        self.skills = skills
+        self.duration = duration
+        self.conditions_for_success = conditions_for_success
+        self.status = status
+        self.tags = tags
+        self.notes = notes
+        self.xp_values = xp_values
+        self.start_time = startTime
 
     def get_id(self) -> int:
-        return self.__id
+        return self.id
 
     def get_subquests(self) -> List[int]:
-        return self.__subquests
+        return self.subquests
 
     def get_superquests(self) -> List[int]:
-        return self.__superquests
+        return self.superquests
 
     def get_title(self) -> str:
-        return self.__title
+        return self.title
 
     def get_description(self) -> str:
-        return self.__description
+        return self.description
 
     def get_stats(self) -> List[CoreStats]:
-        return self.__stats
+        return self.stats
 
     def get_skills(self) -> List[Skills]:
-        return self.__skills
+        return self.skills
 
     def get_duration(self) -> int:
         """In days"""
-        return self.__duration
+        return self.duration
 
     def get_start_time(self) -> time:
-        return self.__start_time
+        return self.start_time
 
     def get_conditions_for_success(self) -> List[str]:
-        return self.__conditions_for_success
+        return self.conditions_for_success
 
     def set_conditions_for_success(self, conditions_for_success: List[str]) -> None:
-        self.__conditions_for_success = conditions_for_success
+        self.conditions_for_success = conditions_for_success
 
     def get_status(self) -> QuestStatus:
-        return self.__status
+        return self.status
 
     def set_status(self, status: QuestStatus) -> None:
-        self.__status = status
+        self.status = status
 
     def get_tags(self) -> List[str]:
-        return self.__tags
+        return self.tags
 
     def set_tags(self, tags: List[str]) -> None:
-        self.__tags = tags
+        self.tags = tags
 
     def get_notes(self) -> List[str]:
-        return self.__notes
+        return self.notes
 
     def set_notes(self, notes: List[str]) -> None:
-        self.__notes = notes
+        self.notes = notes
 
     def get_xp_values(self) -> Dict[str, int]:
-        return self.__xp_values
+        return self.xp_values
 
     def set_xp_values(self, xp: Dict[str, int]) -> None:
-        self.__xp_values = xp
+        self.xp_values = xp
 
     def to_json(self) -> Dict[str, T]:
+        self.status = self.status.value # must set to int for serialization
         return self.__dict__

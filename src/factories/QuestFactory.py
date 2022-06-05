@@ -1,5 +1,6 @@
 from ..interfaces.IQuest import IQuest
 from ..entities.Quest import Quest
+from ..enums.QuestStatus import statusMap
 
 class QuestFactory:
 
@@ -14,7 +15,7 @@ class QuestFactory:
                      attrDict["skills"],
                      attrDict["duration"],
                      attrDict["conditions_for_success"],
-                     attrDict["status"],
+                     statusMap[attrDict["status"]], # convert int to QuestStatus
                      attrDict["tags"],
                      attrDict["notes"],
                      attrDict["xp_values"],

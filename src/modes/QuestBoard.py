@@ -59,8 +59,9 @@ def format_quests(ongoingQuests: List[IQuest]) -> List[str]:
 
 
 def quest_requires_update(quest: IQuest) -> bool:
+    print(quest.get_status())
     # status is not on-going
-    if quest.get_status() != Status.ON_GOING.value:
+    if quest.get_status() != Status.ON_GOING:
         return False
 
     # get dates for comparison (quest's end date and today's date)
@@ -73,6 +74,7 @@ def quest_requires_update(quest: IQuest) -> bool:
 
 def display_quests_requiring_status_update(unformattedQuests: List[IQuest]) -> None:
     questsToUpdate = list(filter(lambda q: quest_requires_update(q), unformattedQuests))
+    otherQuests = list(filter(lambda q: not quest_requires_update(q), unformattedQuests))
 
     for quest in questsToUpdate:
         formattedQuest = format_quests([quest])[0]
@@ -84,13 +86,18 @@ def display_quests_requiring_status_update(unformattedQuests: List[IQuest]) -> N
         quest.set_status(statusMap[status])
         print("Status updated!")
 
+    # recombine all quests and update file
+    if len(questsToUpdate) > 0:
+        otherQuests.extend(questsToUpdate)
+        common.write_file(otherQuests, common.QUESTS_FILEPATH)
+
     print("All quests are up-to-date.")
 
 
 
 
 def display_ongoing_quests(unformattedQuests: List[IQuest]) -> None:
-    ongoingQuests = list(filter(lambda q: q.get_status() == Status.ON_GOING.value, unformattedQuests))
+    ongoingQuests = list(filter(lambda q: q.get_status() == Status.ON_GOING, unformattedQuests))
     formattedQuests = format_quests(ongoingQuests)
 
     for quest in formattedQuests:
