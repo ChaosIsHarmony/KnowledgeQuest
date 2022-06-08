@@ -2,6 +2,7 @@ import enum
 
 class Skills(enum.Enum):
     # STR (100)
+    ATHLETICS = 100
     # STA (200)
     # DEX (300)
     MUSIC_TECHNIQUE = 300
@@ -29,6 +30,7 @@ class Skills(enum.Enum):
 
 
 skillsMap = {
+    Skills.ATHLETICS.value: "Atheltics",
     Skills.MUSIC_TECHNIQUE.value: "Music-Technique",
     Skills.FIGHT_TECHNIQUE.value: "Fight-Technique",
     Skills.STEM.value: "STEM",

@@ -9,9 +9,12 @@ from ..enums.Skills import Skills, skillsMap
 from ..enums.QuestOptions import QuestOptions as Options
 from ..enums.QuestStatus import QuestStatus as Status, statusMap
 
-from typing import Dict, List, TypeVar
+from typing import Dict, List, Tuple, TypeVar
 
 T = TypeVar("T")
+PRIMARY = 3
+SECONDARY = 2
+TERTIARY = 1
 
 
 def fetch_quests(path: str) -> List[IQuest]:
@@ -59,7 +62,6 @@ def format_quests(ongoingQuests: List[IQuest]) -> List[str]:
 
 
 def quest_requires_update(quest: IQuest) -> bool:
-    print(quest.get_status())
     # status is not on-going
     if quest.get_status() != Status.ON_GOING:
         return False
@@ -102,20 +104,106 @@ def display_ongoing_quests(unformattedQuests: List[IQuest]) -> None:
         print(quest)
 
 
+def get_target_input(default: T, message: str) -> T:
+    value = default
+    while value == default:
+        value = input(message)
+        if type(default) == int:
+            value = int(value)
+
+    return value
+
+
+def determine_xp(duration: int, rank: int) -> int:
+    '''
+    Rank is from 1-3, three being the highest.
+    This corresponds to Tertiary, Secondary, Primary importance.
+    '''
+    return int((duration / 7) * rank)
+
+
+def determine_skills(duration: int, xpValues: Dict[int, int]) -> Tuple[List[int], Dict[int, int]]:
+    for skill in Skills:
+        print(f"{skill.value} = {skillsMap[skill.value]}")
+
+    skills = []
+
+    # Primary
+    print("Select Primary Skill")
+    skillVal = get_target_input(0, "Skill Affected: ")
+    skills.append(skillVal)
+    xpValues[skillVal] = determine_xp(duration, PRIMARY)
+
+    # Secondary
+    print("Select Secondary Skill (-1 if not applicable)")
+    skillVal = get_target_input(0, "Skill Affected: ")
+    if skillVal >= 0:
+        skills.append(skillVal)
+        xpValues[skillVal] = determine_xp(duration, SECONDARY)
+
+    # Tertiary
+    print("Select Tertiary Skill (-1 if not applicable)")
+    skillVal = get_target_input(0, "Skill Affected: ")
+    if skillVal >= 0:
+        skills.append(skillVal)
+        xpValues[skillVal] = determine_xp(duration, TERTIARY)
+
+    return skills, xpValues
+
+
+def determine_stats(duration: int, xpValues: Dict[int, int]) -> Tuple[List[int], Dict[int, int]]:
+    for stat in CoreStats:
+        print(f"{stat.value} = {coreStatsMap[stat.value]}")
+
+    stats = []
+
+    # Primary
+    print("Select Primary Stat")
+    statVal = get_target_input(-2, "Core Stat Affected: ")
+    stats.append(statVal)
+    xpValues[statVal] = determine_xp(duration, PRIMARY)
+
+    # Secondary
+    print("Select Secondary Stat (-1 if not applicable)")
+    statVal = get_target_input(-2, "Core Stat Affected: ")
+    if statVal >= 0:
+        stats.append(statVal)
+        xpValues[statVal] = determine_xp(duration, SECONDARY)
+
+    # Tertiary
+    print("Select Tertiary Stat (-1 if not applicable)")
+    statVal = get_target_input(-2, "Core Stat Affected: ")
+    if statVal >= 0:
+        stats.append(statVal)
+        xpValues[statVal] = determine_xp(duration, TERTIARY)
+
+    return stats, xpValues
+
+
+def determine_stats_and_skills(duration: int) -> Tuple[List[int], List[int], Dict[int, int]]:
+    xpValues = {}
+    stats, xpValues = determine_stats(duration, xpValues)
+    skills, xpValues = determine_skills(duration, xpValues)
+
+    return stats, skills, xpValues
+
+
 def create_new_quest(unformattedQuests: List[IQuest], superquest: int = 0, subquests: List[int] = None) -> None:
     # Determine quest details
-    title = ""
-    description = ""
-    stats = []
-    skills = []
-    xpValues = {}
-    duration = 0
+    title = get_target_input("", "Title: ")
+    description = get_target_input("", "Description: ")
+    duration = get_target_input(0, "Duration of Quest: ")
+
+    stats, skills, xpValues = determine_stats_and_skills(duration)
+
+    print(stats, skills, xpValues)
+
     conditionsForSuccess = []
     tags = []
     notes = []
 
     # auto-init important yet to be determined variables
-    idNum = common.get_highest_question_id(unformattedQuests)
+    idNum = common.get_highest_id(unformattedQuests)
     startTime = 0
     status = 0
 
@@ -123,15 +211,13 @@ def create_new_quest(unformattedQuests: List[IQuest], superquest: int = 0, subqu
 
     # Save new quest
 
-    pass
-
 
 def execute_option(option: Options, unformattedQuests: List[IQuest]) -> None:
-    if option == Options.ADD_NEW_QUEST.name[0]:
+    if option == Options.ADD_NEW_QUEST:
         create_new_quest(unformattedQuests)
         return
 
-    if option == Options.START_NEW_QUEST.name[0]:
+    if option == Options.START_NEW_QUEST:
         start_new_quest()
         return
 
@@ -157,7 +243,8 @@ def run() -> None:
             print(option.name)
 
         userSelection = input("")
-        if userSelection.upper() not in [option.name for option in Options]:
+        validOptions = [option.name[0] for option in Options]
+        if userSelection.upper() not in validOptions:
             print("Invalid selection.")
             continue
 
@@ -165,5 +252,6 @@ def run() -> None:
             break
 
         for option in Options:
-            if option.name == userSelection.upper():
+            if option.name[0] == userSelection.upper():
                 execute_option(option, unformattedQuests)
+                break

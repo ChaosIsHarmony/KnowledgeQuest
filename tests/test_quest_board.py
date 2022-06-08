@@ -7,6 +7,8 @@ To test all tests:
 FROM "KnowledgeQuest/" directory
 RUN $ python3 -m unittest2 discover -s tests/ -p "test*.py"
 '''
+import io
+import sys
 import unittest2
 import src.common as common
 
@@ -15,6 +17,16 @@ from src.enums.CoreStats import CoreStats, coreStatsMap
 from src.enums.Skills import Skills, skillsMap
 
 class TestQuestBoard(unittest2.TestCase):
+
+    def stub_stdin(testcase_inst, inputs):
+        stdin = sys.stdin
+
+        def cleanup():
+            sys.stdin = stdin
+
+        testcase_inst.addCleanup(cleanup)
+        sys.stdin = io.StringIO(inputs)
+
 
     def test_fetch_quests(self):
         quests = qb.fetch_quests(common.TEST_QUESTS_FILEPATH)
@@ -55,6 +67,21 @@ class TestQuestBoard(unittest2.TestCase):
         questsNeedUpdate = list(filter(lambda q: qb.quest_requires_update(q), quests))
 
         self.assertEqual(len(questsNeedUpdate), 1)
+
+
+    def test_get_target_input(self):
+        data_and_answers = [
+            ("", "Title: ", "Bobo"),
+            (0, "Duration: ", 30)
+        ]
+
+        for default, message, userInput in data_and_answers:
+            self.stub_stdin(str(userInput))
+            value = qb.get_target_input(default, message)
+
+            self.assertEqual(userInput, value)
+            self.assertEqual(type(userInput), type(value))
+
 
 
 if __name__ == "__main__":
