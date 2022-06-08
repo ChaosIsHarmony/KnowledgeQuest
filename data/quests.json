@@ -2,7 +2,7 @@
     {
         "id": 1,
         "subquests": [],
-        "superquests": [],
+        "superquest": 0,
         "title": "Vibrato Challenge",
         "description": "Improve the quality of your vibrato.",
         "stats": [
@@ -37,7 +37,7 @@
     {
         "id": 3,
         "subquests": [],
-        "superquests": [],
+        "superquest": 0,
         "title": "Practice Boxing Rhythm Footwork",
         "description": "Practice the two modes of rhythm footwork Daili taught.",
         "stats": [
@@ -74,7 +74,7 @@
     {
         "id": 2,
         "subquests": [],
-        "superquests": [],
+        "superquest": 0,
         "title": "Schindler's List Violin",
         "description": "Learn the theme for Schindler's List.",
         "stats": [

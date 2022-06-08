@@ -4,7 +4,7 @@ from .factories.QuestFactory import QuestFactory
 from .factories.QuestionFactory import QuestionFactory
 from .interfaces.IQuest import IQuest
 from .interfaces.IQuestion import IQuestion
-from typing import List
+from typing import List, TypeVar
 
 QUESTS_FILEPATH = "./data/quests.json"
 TEST_QUESTS_FILEPATH = "./tests/data/test_quests.json"
@@ -12,6 +12,7 @@ QUESTIONS_FILEPATH = "./data/questions.json"
 TEST_QUESTIONS_FILEPATH = "./tests/data/test_questions.json"
 TMP_FILEPATH = "./tests/data/tmp.json"
 
+T = TypeVar("T", IQuest, IQuestion)
 
 def load_file(path: str) -> List[str]:
     contents = []
@@ -71,17 +72,18 @@ def deserialize_quests(questsJson: List[str]) -> List[IQuest]:
     return quests
 
 
-def get_highest_question_id() -> int:
-    contents = load_file(QUESTIONS_FILEPATH)
-    questions = deserialize_questions(contents)
-
+def get_highest_id(collection: List[T]) -> int:
     highestId = 0
-    for question in questions:
-        if question.get_id() > highestId:
-            highestId = question.get_id()
+    for item in collection:
+        if item.get_id() > highestId:
+            highestId = item.get_id()
 
-    print(f"The highest question id is: {highestId}")
+    return highestId
 
 
 if __name__ == "__main__":
-    get_highest_question_id()
+    contents = load_file(QUESTIONS_FILEPATH)
+    questions = deserialize_questions(contents)
+
+    highestId = get_highest_question_id(questions)
+    print(f"The highest question id is: {highestId}")

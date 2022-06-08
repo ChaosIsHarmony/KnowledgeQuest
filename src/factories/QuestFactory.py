@@ -8,7 +8,7 @@ class QuestFactory:
     def from_dict(cls, attrDict) -> IQuest:
         return Quest(attrDict["id"],
                      attrDict["subquests"],
-                     attrDict["superquests"],
+                     attrDict["superquest"],
                      attrDict["title"],
                      attrDict["description"],
                      attrDict["stats"],

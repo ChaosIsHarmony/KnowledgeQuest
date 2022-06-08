@@ -94,8 +94,6 @@ def display_quests_requiring_status_update(unformattedQuests: List[IQuest]) -> N
     print("All quests are up-to-date.")
 
 
-
-
 def display_ongoing_quests(unformattedQuests: List[IQuest]) -> None:
     ongoingQuests = list(filter(lambda q: q.get_status() == Status.ON_GOING, unformattedQuests))
     formattedQuests = format_quests(ongoingQuests)
@@ -104,9 +102,37 @@ def display_ongoing_quests(unformattedQuests: List[IQuest]) -> None:
         print(quest)
 
 
-def execute_option(option: Options) -> None:
-    if option == Options.ADD:
-        create_new_quest()
+def create_new_quest(unformattedQuests: List[IQuest], superquest: int = 0, subquests: List[int] = None) -> None:
+    # Determine quest details
+    title = ""
+    description = ""
+    stats = []
+    skills = []
+    xpValues = {}
+    duration = 0
+    conditionsForSuccess = []
+    tags = []
+    notes = []
+
+    # auto-init important yet to be determined variables
+    idNum = common.get_highest_question_id(unformattedQuests)
+    startTime = 0
+    status = 0
+
+    # Determine if should have subquests (loop & recurse)
+
+    # Save new quest
+
+    pass
+
+
+def execute_option(option: Options, unformattedQuests: List[IQuest]) -> None:
+    if option == Options.ADD_NEW_QUEST.name[0]:
+        create_new_quest(unformattedQuests)
+        return
+
+    if option == Options.START_NEW_QUEST.name[0]:
+        start_new_quest()
         return
 
 
@@ -126,7 +152,7 @@ def run() -> None:
 
     # Query user's desired action
     while (True):
-        print("Here are your options:")
+        print("Here are your options [type first letter of selection]:")
         for option in Options:
             print(option.name)
 
@@ -135,9 +161,9 @@ def run() -> None:
             print("Invalid selection.")
             continue
 
-        if userSelection.upper() == Options.QUIT.name:
+        if userSelection.upper() == Options.RETURN_TO_MAIN_MENU.name[0]:
             break
 
         for option in Options:
             if option.name == userSelection.upper():
-                execute_option(option)
+                execute_option(option, unformattedQuests)

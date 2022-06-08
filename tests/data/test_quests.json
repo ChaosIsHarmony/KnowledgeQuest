@@ -2,7 +2,7 @@
   {
     "id": 1,
     "subquests": [],
-    "superquests": [],
+    "superquest": 0,
     "title": "Vibrato Challenge",
     "description": "Improve the quality of your vibrato.",
     "stats": [2,5,6,7],
@@ -24,7 +24,7 @@
   {
     "id": 2,
     "subquests": [],
-    "superquests": [],
+    "superquest": 0,
     "title": "Schindler's List Violin",
     "description": "Learn the theme for Schindler's List.",
     "stats": [2,5,6,7],

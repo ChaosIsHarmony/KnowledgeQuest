@@ -19,7 +19,7 @@ class IQuest(ABC):
         pass
 
     @abstractmethod
-    def get_superquests(self) -> List[int]:
+    def get_superquest(self) -> int:
         pass
 
     @abstractmethod

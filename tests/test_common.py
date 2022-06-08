@@ -40,6 +40,13 @@ class TestCommon(unittest2.TestCase):
         self.assertEqual(fileContents, newFileContents)
 
 
+    def test_get_highest_id(self):
+        fileContents = common.load_file(common.TEST_QUESTIONS_FILEPATH)
+        questions = common.deserialize_questions(fileContents)
+        highestId = common.get_highest_id(questions)
+
+        self.assertEqual(highestId, 9)
+
 
 
 if __name__ == "__main__":
