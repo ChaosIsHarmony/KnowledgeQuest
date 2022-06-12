@@ -85,5 +85,5 @@ if __name__ == "__main__":
     contents = load_file(QUESTIONS_FILEPATH)
     questions = deserialize_questions(contents)
 
-    highestId = get_highest_question_id(questions)
+    highestId = get_highest_id(questions)
     print(f"The highest question id is: {highestId}")
