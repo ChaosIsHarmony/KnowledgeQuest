@@ -3,11 +3,12 @@ import json
 import time
 
 from .. import common
-from ..interfaces.IQuest import IQuest
 from ..enums.CoreStats import CoreStats, coreStatsMap
 from ..enums.Skills import Skills, skillsMap
 from ..enums.QuestOptions import QuestOptions as Options
 from ..enums.QuestStatus import QuestStatus as Status, statusMap
+from ..factories.QuestFactory import QuestFactory
+from ..interfaces.IQuest import IQuest
 
 from typing import Dict, List, Tuple, TypeVar
 
@@ -15,6 +16,7 @@ T = TypeVar("T")
 PRIMARY = 3
 SECONDARY = 2
 TERTIARY = 1
+_NEXT_QUEST_ID = 0 # Used for quest id consistency
 
 
 def fetch_quests(path: str) -> List[IQuest]:
@@ -109,7 +111,11 @@ def get_target_input(default: T, message: str) -> T:
     while value == default:
         value = input(message)
         if type(default) == int:
-            value = int(value)
+            try:
+                value = int(value)
+            except:
+                print("Invalid input.")
+                value = default
 
     return value
 
@@ -141,12 +147,12 @@ def determine_skills(duration: int, xpValues: Dict[int, int]) -> Tuple[List[int]
         skills.append(skillVal)
         xpValues[skillVal] = determine_xp(duration, SECONDARY)
 
-    # Tertiary
-    print("Select Tertiary Skill (-1 if not applicable)")
-    skillVal = get_target_input(0, "Skill Affected: ")
-    if skillVal >= 0:
-        skills.append(skillVal)
-        xpValues[skillVal] = determine_xp(duration, TERTIARY)
+        # Tertiary (only performed if Secondary Skill has been added)
+        print("Select Tertiary Skill (-1 if not applicable)")
+        skillVal = get_target_input(0, "Skill Affected: ")
+        if skillVal >= 0:
+            skills.append(skillVal)
+            xpValues[skillVal] = determine_xp(duration, TERTIARY)
 
     return skills, xpValues
 
@@ -170,12 +176,12 @@ def determine_stats(duration: int, xpValues: Dict[int, int]) -> Tuple[List[int],
         stats.append(statVal)
         xpValues[statVal] = determine_xp(duration, SECONDARY)
 
-    # Tertiary
-    print("Select Tertiary Stat (-1 if not applicable)")
-    statVal = get_target_input(-2, "Core Stat Affected: ")
-    if statVal >= 0:
-        stats.append(statVal)
-        xpValues[statVal] = determine_xp(duration, TERTIARY)
+        # Tertiary (only performed if Secondary Stat has been added)
+        print("Select Tertiary Stat (-1 if not applicable)")
+        statVal = get_target_input(-2, "Core Stat Affected: ")
+        if statVal >= 0:
+            stats.append(statVal)
+            xpValues[statVal] = determine_xp(duration, TERTIARY)
 
     return stats, xpValues
 
@@ -188,32 +194,86 @@ def determine_stats_and_skills(duration: int) -> Tuple[List[int], List[int], Dic
     return stats, skills, xpValues
 
 
-def create_new_quest(unformattedQuests: List[IQuest], superquest: int = 0, subquests: List[int] = None) -> None:
+def get_array_of_input_strs(msg: str) -> List[str]:
+    inputStrs = []
+    while True:
+        response = input(f"{msg} [empty if no more]: ")
+        if response == "":
+            break
+        inputStrs.append(response)
+
+    return inputStrs
+
+
+def create_new_quest(questList: List[IQuest], superquest: int = -1) -> int:
+    '''
+    Returns its own id. This is useful for the parent quests collecting their children quests ids.
+    '''
     # Determine quest details
     title = get_target_input("", "Title: ")
     description = get_target_input("", "Description: ")
     duration = get_target_input(0, "Duration of Quest: ")
-
     stats, skills, xpValues = determine_stats_and_skills(duration)
-
-    print(stats, skills, xpValues)
-
-    conditionsForSuccess = []
-    tags = []
-    notes = []
+    conditionsForSuccess = get_array_of_input_strs("Add condition for success")
+    tags = get_array_of_input_strs("Add tag")
+    notes = get_array_of_input_strs("Add note")
 
     # auto-init important yet to be determined variables
-    idNum = common.get_highest_id(unformattedQuests)
+    idNum = get_and_update_next_quest_id()
     startTime = 0
-    status = 0
+    status = Status.WAITING.value
 
     # Determine if should have subquests (loop & recurse)
+    subquests = []
+    ans = input("Will this quest have subquests? ")
+    if ans.lower() == 'y':
+        while True:
+            childIdNum = create_new_quest(questList, superquest=idNum)
+            subquests.append(childIdNum)
+            ans = input("Add another subquest? ")
+            if ans.lower() != 'y':
+                break
 
     # Save new quest
+    questDict = {
+            "id": idNum,
+            "subquests": subquests,
+            "superquest": superquest,
+            "title": title,
+            "description": description,
+            "stats": stats,
+            "skills": skills,
+            "duration": duration,
+            "conditions_for_success": conditionsForSuccess,
+            "status": status,
+            "tags": tags,
+            "notes": notes,
+            "xp_values": xpValues,
+            "start_time": startTime
+            }
+    quest = QuestFactory.from_dict(questDict)
+    questList.append(quest)
+    common.write_file(questList, common.QUESTS_FILEPATH)
+
+    return idNum
+
+
+def get_and_update_next_quest_id() -> int:
+    global _NEXT_QUEST_ID
+    nextId = _NEXT_QUEST_ID             # store next id
+    set_next_quest_id(_NEXT_QUEST_ID)   # increment for next call
+    return nextId
+
+
+def set_next_quest_id(highestId: int) -> None:
+    global _NEXT_QUEST_ID
+    _NEXT_QUEST_ID = highestId + 1
+    print(_NEXT_QUEST_ID)
 
 
 def execute_option(option: Options, unformattedQuests: List[IQuest]) -> None:
     if option == Options.ADD_NEW_QUEST:
+        set_next_quest_id(common.get_highest_id(unformattedQuests))
         create_new_quest(unformattedQuests)
         return
 

@@ -88,3 +88,6 @@ class Quest(IQuest, IJsonSerializable):
     def to_json(self) -> Dict[str, T]:
         self.status = self.status.value # must set to int for serialization
         return self.__dict__
+
+    def __repr__(self) -> str:
+        return f"ID: {self.id} | Title: {self.title}"

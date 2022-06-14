@@ -705,5 +705,71 @@
             "programming",
             "technocraft"
         ]
+    },
+    {
+        "id": 33,
+        "question_text": "What qualifies as an outlier wrt Statistics?",
+        "answers": [
+            "Anything less than the first quartile - (1.5 x IQR) or greater than the third quartile + (1.5 x IQR). Extreme outliers are 3 x IQR.",
+            "Anything below the first quartile and above the third quartile.",
+            "Anything one standard deviation from the mean in either direction."
+        ],
+        "answer": "Anything less than the first quartile - (1.5 x IQR) or greater than the third quartile + (1.5 x IQR). Extreme outliers are 3 x IQR.",
+        "n_times_asked": 0,
+        "n_times_answered_correctly": 0,
+        "last_asked": 0,
+        "skills": [
+            500,
+            601,
+            602
+        ],
+        "tags": [
+            "statistics",
+            "data science"
+        ]
+    },
+    {
+        "id": 34,
+        "question_text": "When is 'Resampling' to be avoided wrt Statistics?",
+        "answers": [
+            "When the exhibits serial dependence (e.g., in a musical melody).",
+            "When there are less than 1000 datapoints.",
+            "When there is a very narrow Interquartile Range."
+        ],
+        "answer": "When the exhibits serial dependence (e.g., in a musical melody).",
+        "n_times_asked": 0,
+        "n_times_answered_correctly": 0,
+        "last_asked": 0,
+        "skills": [
+            500,
+            601,
+            602
+        ],
+        "tags": [
+            "statistics",
+            "data science"
+        ]
+    },
+    {
+        "id": 35,
+        "question_text": "What is the difference between a 'Statistic' and a 'Parameter' wrt Statistics?",
+        "answers": [
+            "A statistic represents a property of a population sample; whereas, a parameter is a numerical characteristic of a whole population that is estimated by a statistic.",
+            "A parameter are the variables used to generalize a statistic.",
+            "A parameter is a representative property of a sample; whereas, a statistic describes the population as a whole."
+        ],
+        "answer": "A statistic represents a property of a population sample; whereas, a parameter is a numerical characteristic of a whole population that is estimated by a statistic.",
+        "n_times_asked": 0,
+        "n_times_answered_correctly": 0,
+        "last_asked": 0,
+        "skills": [
+            500,
+            601,
+            602
+        ],
+        "tags": [
+            "statistics",
+            "data science"
+        ]
     }
 ]

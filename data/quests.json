@@ -33,41 +33,6 @@
         "start_time": 0
     },
     {
-        "id": 3,
-        "subquests": [],
-        "superquest": 0,
-        "title": "Practice Boxing Rhythm Footwork",
-        "description": "Practice the two modes of rhythm footwork Daili taught.",
-        "stats": [
-            0,
-            1,
-            2
-        ],
-        "skills": [
-            301
-        ],
-        "duration": 7,
-        "conditions_for_success": [
-            "10x stationary version daily",
-            "10x 3-beat version daily"
-        ],
-        "status": 1,
-        "tags": [
-            "striking",
-            "combat",
-            "fighting",
-            "martial arts"
-        ],
-        "notes": [],
-        "xp_values": {
-            "0": 1,
-            "1": 1,
-            "2": 3,
-            "301": 3
-        },
-        "start_time": 1654415741.5605016
-    },
-    {
         "id": 2,
         "subquests": [],
         "superquest": 0,
@@ -104,5 +69,40 @@
             "700": 12
         },
         "start_time": 0
+    },
+    {
+        "id": 3,
+        "subquests": [],
+        "superquest": 0,
+        "title": "Practice Boxing Rhythm Footwork",
+        "description": "Practice the two modes of rhythm footwork Daili taught.",
+        "stats": [
+            0,
+            1,
+            2
+        ],
+        "skills": [
+            301
+        ],
+        "duration": 7,
+        "conditions_for_success": [
+            "10x stationary version daily",
+            "10x 3-beat version daily"
+        ],
+        "status": 2,
+        "tags": [
+            "striking",
+            "combat",
+            "fighting",
+            "martial arts"
+        ],
+        "notes": [],
+        "xp_values": {
+            "0": 1,
+            "1": 1,
+            "2": 3,
+            "301": 3
+        },
+        "start_time": 1654415741.5605016
     }
 ]
