@@ -1,628 +1,5 @@
 [
     {
-        "id": 13,
-        "question_text": "What is currying wrt functions?",
-        "answers": [
-            "It is the technique of taking several functions a coalescing them into a single function.",
-            "It is the technique whereby you pass a single vector as a parameter instead of all the elements of said vectors as individual parameters.",
-            "It is the technique of converting a function that takes multiple arguments into a sequence of functions that each takes a single argument."
-        ],
-        "answer": "It is the technique of converting a function that takes multiple arguments into a sequence of functions that each takes a single argument.",
-        "n_times_asked": 3,
-        "n_times_answered_correctly": 3,
-        "last_asked": 1654404058.246935,
-        "skills": [
-            500
-        ],
-        "tags": [
-            "math",
-            "functional programming"
-        ]
-    },
-    {
-        "id": 11,
-        "question_text": "What is Modus Tollens?",
-        "answers": [
-            "Affirming the antecedent: P -> Q AND P, thus Q.",
-            "Denying the consequent: P -> Q AND ~Q, thus ~P.",
-            "Inversion: P -> Q AND Q -> P, thus Q AND P."
-        ],
-        "answer": "Denying the consequent: P -> Q AND ~Q, thus ~P.",
-        "n_times_asked": 3,
-        "n_times_answered_correctly": 3,
-        "last_asked": 1654404073.0990999,
-        "skills": [
-            500
-        ],
-        "tags": [
-            "math",
-            "logic"
-        ]
-    },
-    {
-        "id": 5,
-        "question_text": "What does the 'D' in S.O.L.I.D. stand for?",
-        "answers": [
-            "Denial of Service",
-            "Dependency Inversion Principle",
-            "Dual-Use Principle"
-        ],
-        "answer": "Dependency Inversion Principle",
-        "n_times_asked": 3,
-        "n_times_answered_correctly": 3,
-        "last_asked": 1654404085.4996727,
-        "skills": [
-            500
-        ],
-        "tags": [
-            "software engineering",
-            "programming",
-            "technocraft"
-        ]
-    },
-    {
-        "id": 12,
-        "question_text": "What is the contrapositive?",
-        "answers": [
-            "P -> Q, thus ~P -> ~Q.",
-            "P -> Q, thus ~Q -> ~P.",
-            "P -> Q, thus ~Q -> P."
-        ],
-        "answer": "P -> Q, thus ~Q -> ~P.",
-        "n_times_asked": 3,
-        "n_times_answered_correctly": 3,
-        "last_asked": 1654404093.3953147,
-        "skills": [
-            500
-        ],
-        "tags": [
-            "math",
-            "logic"
-        ]
-    },
-    {
-        "id": 8,
-        "question_text": "What is the Liskov Substitution Principle?",
-        "answers": [
-            "Every subclass should function as a substitute for their base class.",
-            "Subclasses should be identical to their base class.",
-            "Subclasses should never be declared as types of their base class"
-        ],
-        "answer": "Every subclass should function as a substitute for their base class.",
-        "n_times_asked": 4,
-        "n_times_answered_correctly": 4,
-        "last_asked": 1654404102.1281624,
-        "skills": [
-            500
-        ],
-        "tags": [
-            "software engineering",
-            "programming",
-            "technocraft"
-        ]
-    },
-    {
-        "id": 7,
-        "question_text": "What is the Interface Segregation Principle?",
-        "answers": [
-            "No two interfaces should ever overlap.",
-            "Interfaces should define implementation details.",
-            "Interfaces should be narrow, not wide."
-        ],
-        "answer": "Interfaces should be narrow, not wide.",
-        "n_times_asked": 3,
-        "n_times_answered_correctly": 3,
-        "last_asked": 1654404110.722502,
-        "skills": [
-            500
-        ],
-        "tags": [
-            "software engineering",
-            "programming",
-            "technocraft"
-        ]
-    },
-    {
-        "id": 6,
-        "question_text": "What is the Dependency Inversion Principle?",
-        "answers": [
-            "Software should have zero dependencies.",
-            "The user should not depend on the software dev to fix their problems.",
-            "Entities must depend on abstractions (interfaces), not concretions (implementations)."
-        ],
-        "answer": "Entities must depend on abstractions (interfaces), not concretions (implementations).",
-        "n_times_asked": 3,
-        "n_times_answered_correctly": 3,
-        "last_asked": 1654404120.442274,
-        "skills": [
-            500
-        ],
-        "tags": [
-            "software engineering",
-            "programming",
-            "technocraft"
-        ]
-    },
-    {
-        "id": 4,
-        "question_text": "What does the 'I' in S.O.L.I.D. stand for?",
-        "answers": [
-            "Inversion of Control",
-            "Interface Segregation Principle",
-            "Interest First"
-        ],
-        "answer": "Interface Segregation Principle",
-        "n_times_asked": 4,
-        "n_times_answered_correctly": 4,
-        "last_asked": 1654404126.9074469,
-        "skills": [
-            500
-        ],
-        "tags": [
-            "software engineering",
-            "programming",
-            "technocraft"
-        ]
-    },
-    {
-        "id": 17,
-        "question_text": "What are oversampling and undersampling?",
-        "answers": [
-            "When statisticians go out and collect more samples of one kind and fewer of another to enhance the dataset.",
-            "A reason for rejecting a given dataset as valid.",
-            "Forms of resampling to even out representation of majority and minority data to avoid incorrect conclusions based on an unbalanced dataset."
-        ],
-        "answer": "Forms of resampling to even out representation of majority and minority data to avoid incorrect conclusions based on an unbalanced dataset.",
-        "n_times_asked": 2,
-        "n_times_answered_correctly": 2,
-        "last_asked": 1654415813.411963,
-        "skills": [
-            500,
-            601,
-            602
-        ],
-        "tags": [
-            "statistics",
-            "data science"
-        ]
-    },
-    {
-        "id": 24,
-        "question_text": "How are p-values (the threshold for statistical significance) determined?",
-        "answers": [
-            "They are decided by the Statistics Bureau.",
-            "It depends on the quantity of data available: more data means a higher threshold.",
-            "They are arbitrary and decided by the researcher, but are often p = 0.05 or 5%."
-        ],
-        "answer": "They are arbitrary and decided by the researcher, but are often p = 0.05 or 5%.",
-        "n_times_asked": 2,
-        "n_times_answered_correctly": 2,
-        "last_asked": 1654415825.8696647,
-        "skills": [
-            500,
-            601,
-            602
-        ],
-        "tags": [
-            "statistics",
-            "data science"
-        ]
-    },
-    {
-        "id": 23,
-        "question_text": "What are Type I and Type II errors?",
-        "answers": [
-            "False Positive, False Negative, respectively.",
-            "False Positive, Data Collection error, respectively.",
-            "False Negative, False Positive, respectively."
-        ],
-        "answer": "False Positive, False Negative, respectively.",
-        "n_times_asked": 2,
-        "n_times_answered_correctly": 2,
-        "last_asked": 1654415876.72824,
-        "skills": [
-            500,
-            601,
-            602
-        ],
-        "tags": [
-            "statistics",
-            "data science"
-        ]
-    },
-    {
-        "id": 18,
-        "question_text": "What are the three measures of central tendency in statistics?",
-        "answers": [
-            "Mode, Median, Mean",
-            "Mode, Median, Meridian",
-            "Median, Mode, Meridian"
-        ],
-        "answer": "Mode, Median, Mean",
-        "n_times_asked": 2,
-        "n_times_answered_correctly": 2,
-        "last_asked": 1654415893.2312617,
-        "skills": [
-            500,
-            601,
-            602
-        ],
-        "tags": [
-            "statistics",
-            "data science"
-        ]
-    },
-    {
-        "id": 21,
-        "question_text": "What are the null and alternative hypotheses?",
-        "answers": [
-            "Null hypothesis: there is no observable effect in the population; Alternative hypothesis: there is an observable effect in the population.",
-            "Null hypothesis: there is no explanation for a given phenomenon; Alternative hypothesis: there is an explanation.",
-            "Null hypothesis: nothing happened; Alternative hypothesis: under the same conditions, something did happen the second time."
-        ],
-        "answer": "Null hypothesis: there is no observable effect in the population; Alternative hypothesis: there is an observable effect in the population.",
-        "n_times_asked": 2,
-        "n_times_answered_correctly": 2,
-        "last_asked": 1654415901.8035274,
-        "skills": [
-            500,
-            601,
-            602
-        ],
-        "tags": [
-            "statistics",
-            "data science"
-        ]
-    },
-    {
-        "id": 16,
-        "question_text": "What is the difference between Descriptive Statistics and Inferential Statistics?",
-        "answers": [
-            "Descriptive Statistics describe how to do Inferential Statistics.",
-            "Descriptive Statistics cannot be done without Inferential Statistics.",
-            "Descriptive Statistics show what the data are; Inferential Statistics show what the data mean."
-        ],
-        "answer": "Descriptive Statistics show what the data are; Inferential Statistics show what the data mean.",
-        "n_times_asked": 2,
-        "n_times_answered_correctly": 2,
-        "last_asked": 1654415913.1781113,
-        "skills": [
-            500,
-            601,
-            602
-        ],
-        "tags": [
-            "statistics",
-            "data science"
-        ]
-    },
-    {
-        "id": 19,
-        "question_text": "What does variance measure?\n (\u03a3 (x_i - \u00b5)^2)/n ",
-        "answers": [
-            "It measures the average distance of all data points from the mean.",
-            "It measures the average change between data points.",
-            "It measures how close an individual data point is from the mean."
-        ],
-        "answer": "It measures the average distance of all data points from the mean.",
-        "n_times_asked": 2,
-        "n_times_answered_correctly": 2,
-        "last_asked": 1654415931.612757,
-        "skills": [
-            500,
-            601,
-            602
-        ],
-        "tags": [
-            "statistics",
-            "data science"
-        ]
-    },
-    {
-        "id": 15,
-        "question_text": "What is the Procrustean Bed?",
-        "answers": [
-            "A bed where people must fit perfectly: chop off those too long, stretch those too short.",
-            "A bed made from crustaceans.",
-            "A river bed that leads to the ocean."
-        ],
-        "answer": "A bed where people must fit perfectly: chop off those too long, stretch those too short.",
-        "n_times_asked": 2,
-        "n_times_answered_correctly": 2,
-        "last_asked": 1654415938.6078482,
-        "skills": [
-            501,
-            601
-        ],
-        "tags": [
-            "mythology",
-            "bias"
-        ]
-    },
-    {
-        "id": 22,
-        "question_text": "When can we reject the null hypothesis?",
-        "answers": [
-            "When p > \u03b1.",
-            "When p \u2264 \u03b1.",
-            "When p = \u03b1."
-        ],
-        "answer": "When p \u2264 \u03b1.",
-        "n_times_asked": 2,
-        "n_times_answered_correctly": 2,
-        "last_asked": 1654415955.6630526,
-        "skills": [
-            500,
-            601,
-            602
-        ],
-        "tags": [
-            "statistics",
-            "data science"
-        ]
-    },
-    {
-        "id": 20,
-        "question_text": "When is a result statistically significant?",
-        "answers": [
-            "When a result is confirmed independently by several sources.",
-            "When it happens more than 50% of the time.",
-            "When it is unlikely that a result would have occurred under the null hypothesis, as defined by the p-value."
-        ],
-        "answer": "When it is unlikely that a result would have occurred under the null hypothesis, as defined by the p-value.",
-        "n_times_asked": 2,
-        "n_times_answered_correctly": 2,
-        "last_asked": 1654415969.4555619,
-        "skills": [
-            500,
-            601,
-            602
-        ],
-        "tags": [
-            "statistics",
-            "data science"
-        ]
-    },
-    {
-        "id": 3,
-        "question_text": "What does the 'L' in S.O.L.I.D. stand for?",
-        "answers": [
-            "Later Principle",
-            "Liskov Substitution Principle",
-            "Last In Principle"
-        ],
-        "answer": "Liskov Substitution Principle",
-        "n_times_asked": 5,
-        "n_times_answered_correctly": 5,
-        "last_asked": 1654417876.3262098,
-        "skills": [
-            500
-        ],
-        "tags": [
-            "software engineering",
-            "programming",
-            "technocraft"
-        ]
-    },
-    {
-        "id": 25,
-        "question_text": "What is statistical power?",
-        "answers": [
-            "It is the likelihood of a significance test detecting an effect when there is one (True Positive). It is mainly influenced by sample size, effect size, and significance level.",
-            "It is the probability of avoiding a Type I error (False Positive).",
-            "It is the metric used to determine the author's credibility."
-        ],
-        "answer": "It is the likelihood of a significance test detecting an effect when there is one (True Positive). It is mainly influenced by sample size, effect size, and significance level.",
-        "n_times_asked": 2,
-        "n_times_answered_correctly": 2,
-        "last_asked": 1654417896.3606782,
-        "skills": [
-            500,
-            601,
-            602
-        ],
-        "tags": [
-            "statistics",
-            "data science"
-        ]
-    },
-    {
-        "id": 27,
-        "question_text": "If a sample space S is finite, then |S| = N. What is the magnitude of F? [F = { A | A \u2286 S }]",
-        "answers": [
-            "2^F.",
-            "2^N.",
-            "2^S."
-        ],
-        "answer": "2^N.",
-        "n_times_asked": 2,
-        "n_times_answered_correctly": 2,
-        "last_asked": 1654417910.0668373,
-        "skills": [
-            500,
-            601,
-            602
-        ],
-        "tags": [
-            "statistics",
-            "data science"
-        ]
-    },
-    {
-        "id": 28,
-        "question_text": "Let A, B \u2208 F be any two events. What event is A \u222a B?",
-        "answers": [
-            "Either event A occurs, or B occurs, but not both (Exclusive Or).",
-            "The event that neither A nor B occur.",
-            "The event A occurs, or B occurs, of they both occur (Inclusive Or)."
-        ],
-        "answer": "The event A occurs, or B occurs, of they both occur (Inclusive Or).",
-        "n_times_asked": 2,
-        "n_times_answered_correctly": 2,
-        "last_asked": 1654417941.0098186,
-        "skills": [
-            500,
-            601,
-            602
-        ],
-        "tags": [
-            "statistics",
-            "data science"
-        ]
-    },
-    {
-        "id": 26,
-        "question_text": "If an event A is defined as any subset of the sample space S, then what are the definitions of S, \u00d8, and F? [F = { A | A \u2286 S }]",
-        "answers": [
-            "The impossible event, the class of all possible events, the sure event.",
-            "The sure event, the impossible event, the class of all possible events.",
-            "The sure event, the class of all possible events, the impossible event."
-        ],
-        "answer": "The sure event, the impossible event, the class of all possible events.",
-        "n_times_asked": 2,
-        "n_times_answered_correctly": 2,
-        "last_asked": 1654417961.9758298,
-        "skills": [
-            500,
-            601,
-            602
-        ],
-        "tags": [
-            "statistics",
-            "data science"
-        ]
-    },
-    {
-        "id": 9,
-        "question_text": "What is the Open-Closed Principle?",
-        "answers": [
-            "All entities should have get methods for all fields.",
-            "Entities should be open for extension, but closed for modification.",
-            "All objects should be closed to save memory."
-        ],
-        "answer": "Entities should be open for extension, but closed for modification.",
-        "n_times_asked": 4,
-        "n_times_answered_correctly": 4,
-        "last_asked": 1655003352.041144,
-        "skills": [
-            500
-        ],
-        "tags": [
-            "software engineering",
-            "programming",
-            "technocraft"
-        ]
-    },
-    {
-        "id": 2,
-        "question_text": "What does the 'O' in S.O.L.I.D. stand for?",
-        "answers": [
-            "Only Once Principle",
-            "Open-Closed Principle",
-            "Overuse Principle"
-        ],
-        "answer": "Open-Closed Principle",
-        "n_times_asked": 5,
-        "n_times_answered_correctly": 5,
-        "last_asked": 1655003366.7155082,
-        "skills": [
-            500
-        ],
-        "tags": [
-            "software engineering",
-            "programming",
-            "technocraft"
-        ]
-    },
-    {
-        "id": 31,
-        "question_text": "What is a 'Confidence Interval' wrt to Statistics?",
-        "answers": [
-            "A measure of distance from the mode.",
-            "The middle 90% range of a dataset.",
-            "A range of two standard deviations."
-        ],
-        "answer": "The middle 90% range of a dataset.",
-        "n_times_asked": 1,
-        "n_times_answered_correctly": 1,
-        "last_asked": 1655003375.7713785,
-        "skills": [
-            500,
-            601,
-            602
-        ],
-        "tags": [
-            "statistics",
-            "data science"
-        ]
-    },
-    {
-        "id": 32,
-        "question_text": "What is 'Bootstrapping' wrt to Statistics?",
-        "answers": [
-            "The process of creating new samples by choosing n-1 values from the original sample of size n.",
-            "The process of creating new samples by choosing a random number of values from the original sample of size n.",
-            "The process of creating new samples by choosing n values from the original sample of size n uniformly and with replacement."
-        ],
-        "answer": "The process of creating new samples by choosing n values from the original sample of size n uniformly and with replacement.",
-        "n_times_asked": 1,
-        "n_times_answered_correctly": 1,
-        "last_asked": 1655003384.8011131,
-        "skills": [
-            500,
-            601,
-            602
-        ],
-        "tags": [
-            "statistics",
-            "data science"
-        ]
-    },
-    {
-        "id": 30,
-        "question_text": "Let A, B \u2208 F be any two events. What event is A complement?",
-        "answers": [
-            "B - A, Either event A occurs, or B occurs, but not both.",
-            "S - A, the event that A does not occur.",
-            "F - A, The event that neither A nor B occur."
-        ],
-        "answer": "S - A, the event that A does not occur.",
-        "n_times_asked": 2,
-        "n_times_answered_correctly": 2,
-        "last_asked": 1655003401.2875366,
-        "skills": [
-            500,
-            601,
-            602
-        ],
-        "tags": [
-            "statistics",
-            "data science"
-        ]
-    },
-    {
-        "id": 33,
-        "question_text": "When using resampling, what is a valid 'Significance' test wrt Statistics?",
-        "answers": [
-            "Shuffling the labels of the original sample and measuring the difference in means to see how often the original difference would show up by just random chance.",
-            "Determining whether or not a given datapoint is 2+ standard deviations from the mean.",
-            "Using a t-test on a single resampled dataset."
-        ],
-        "answer": "Shuffling the labels of the original sample and measuring the difference in means to see how often the original difference would show up by just random chance.",
-        "n_times_asked": 1,
-        "n_times_answered_correctly": 1,
-        "last_asked": 1655003422.0208702,
-        "skills": [
-            500,
-            601,
-            602
-        ],
-        "tags": [
-            "statistics",
-            "data science"
-        ]
-    },
-    {
         "id": 14,
         "question_text": "What is Bayes' Theorem?",
         "answers": [
@@ -710,14 +87,14 @@
         "id": 33,
         "question_text": "What qualifies as an outlier wrt Statistics?",
         "answers": [
-            "Anything less than the first quartile - (1.5 x IQR) or greater than the third quartile + (1.5 x IQR). Extreme outliers are 3 x IQR.",
             "Anything below the first quartile and above the third quartile.",
-            "Anything one standard deviation from the mean in either direction."
+            "Anything one standard deviation from the mean in either direction.",
+            "Anything less than the first quartile - (1.5 x IQR) or greater than the third quartile + (1.5 x IQR). Extreme outliers are 3 x IQR."
         ],
         "answer": "Anything less than the first quartile - (1.5 x IQR) or greater than the third quartile + (1.5 x IQR). Extreme outliers are 3 x IQR.",
-        "n_times_asked": 0,
-        "n_times_answered_correctly": 0,
-        "last_asked": 0,
+        "n_times_asked": 1,
+        "n_times_answered_correctly": 1,
+        "last_asked": 1655361648.2649124,
         "skills": [
             500,
             601,
@@ -729,17 +106,17 @@
         ]
     },
     {
-        "id": 34,
-        "question_text": "When is 'Resampling' to be avoided wrt Statistics?",
+        "id": 37,
+        "question_text": "If a test for a disease D has a sensitivity of 0.95 (Test Positive given D, or P(TP|D)), and a specificity of 0.92 (Test Negative given not D, or P(TPc|Dc) and the probability of actually having the disease is P(D) = 0.05 (i.e., only 5% of the population has the disease), then what are the chances a person who tests positive actually has the disease: P(D|TP)?\n Hint: Bayes' Rule",
         "answers": [
-            "When the exhibits serial dependence (e.g., in a musical melody).",
-            "When there are less than 1000 datapoints.",
-            "When there is a very narrow Interquartile Range."
+            "0.3846",
+            "0.1656",
+            "0.2345"
         ],
-        "answer": "When the exhibits serial dependence (e.g., in a musical melody).",
-        "n_times_asked": 0,
-        "n_times_answered_correctly": 0,
-        "last_asked": 0,
+        "answer": "0.3846",
+        "n_times_asked": 1,
+        "n_times_answered_correctly": 1,
+        "last_asked": 1655361657.1917224,
         "skills": [
             500,
             601,
@@ -754,14 +131,14 @@
         "id": 35,
         "question_text": "What is the difference between a 'Statistic' and a 'Parameter' wrt Statistics?",
         "answers": [
+            "A parameter is a representative property of a sample; whereas, a statistic describes the population as a whole.",
             "A statistic represents a property of a population sample; whereas, a parameter is a numerical characteristic of a whole population that is estimated by a statistic.",
-            "A parameter are the variables used to generalize a statistic.",
-            "A parameter is a representative property of a sample; whereas, a statistic describes the population as a whole."
+            "A parameter are the variables used to generalize a statistic."
         ],
         "answer": "A statistic represents a property of a population sample; whereas, a parameter is a numerical characteristic of a whole population that is estimated by a statistic.",
-        "n_times_asked": 0,
-        "n_times_answered_correctly": 0,
-        "last_asked": 0,
+        "n_times_asked": 1,
+        "n_times_answered_correctly": 1,
+        "last_asked": 1655361707.5655308,
         "skills": [
             500,
             601,
@@ -770,6 +147,791 @@
         "tags": [
             "statistics",
             "data science"
+        ]
+    },
+    {
+        "id": 38,
+        "question_text": "Defined in whole (W) and half (H) steps, what is the proper sequence of steps from the tonic for the Ionian mode?",
+        "answers": [
+            "W-W-H-W-W-W-H",
+            "H-W-H-W-W-W-W",
+            "W-H-H-W-W-W-H"
+        ],
+        "answer": "W-W-H-W-W-W-H",
+        "n_times_asked": 1,
+        "n_times_answered_correctly": 1,
+        "last_asked": 1655361718.0520692,
+        "skills": [
+            508
+        ],
+        "tags": [
+            "music",
+            "church modes"
+        ]
+    },
+    {
+        "id": 40,
+        "question_text": "Defined in whole (W) and half (H) steps, what is the proper sequence of steps from the tonic for the Dorian mode?",
+        "answers": [
+            "W-H-H-W-W-W-H",
+            "W-H-W-W-W-H-W",
+            "H-W-H-W-W-W-W"
+        ],
+        "answer": "W-H-W-W-W-H-W",
+        "n_times_asked": 1,
+        "n_times_answered_correctly": 1,
+        "last_asked": 1655361732.5988271,
+        "skills": [
+            508
+        ],
+        "tags": [
+            "music",
+            "church modes"
+        ]
+    },
+    {
+        "id": 42,
+        "question_text": "Defined in whole (W) and half (H) steps, what is the proper sequence of steps from the tonic for the Lydian mode?",
+        "answers": [
+            "W-H-H-W-W-W-H",
+            "H-W-H-W-W-W-W",
+            "W-W-W-H-W-W-H"
+        ],
+        "answer": "W-W-W-H-W-W-H",
+        "n_times_asked": 1,
+        "n_times_answered_correctly": 1,
+        "last_asked": 1655361744.5625346,
+        "skills": [
+            508
+        ],
+        "tags": [
+            "music",
+            "church modes"
+        ]
+    },
+    {
+        "id": 41,
+        "question_text": "Defined in whole (W) and half (H) steps, what is the proper sequence of steps from the tonic for the Phrygian mode?",
+        "answers": [
+            "W-H-H-W-W-W-H",
+            "H-W-W-W-H-W-W",
+            "H-W-H-W-W-W-W"
+        ],
+        "answer": "H-W-W-W-H-W-W",
+        "n_times_asked": 1,
+        "n_times_answered_correctly": 1,
+        "last_asked": 1655361757.544478,
+        "skills": [
+            508
+        ],
+        "tags": [
+            "music",
+            "church modes"
+        ]
+    },
+    {
+        "id": 39,
+        "question_text": "Defined in whole (W) and half (H) steps, what is the proper sequence of steps from the tonic for the Aeolian mode?",
+        "answers": [
+            "H-W-H-W-W-W-W",
+            "W-H-H-W-W-W-H",
+            "W-H-W-W-H-W-W"
+        ],
+        "answer": "W-H-W-W-H-W-W",
+        "n_times_asked": 1,
+        "n_times_answered_correctly": 1,
+        "last_asked": 1655361767.6076696,
+        "skills": [
+            508
+        ],
+        "tags": [
+            "music",
+            "church modes"
+        ]
+    },
+    {
+        "id": 34,
+        "question_text": "When is 'Resampling' to be avoided wrt Statistics?",
+        "answers": [
+            "When there is a very narrow Interquartile Range.",
+            "When there are less than 1000 datapoints.",
+            "When the exhibits serial dependence (e.g., in a musical melody)."
+        ],
+        "answer": "When the exhibits serial dependence (e.g., in a musical melody).",
+        "n_times_asked": 1,
+        "n_times_answered_correctly": 1,
+        "last_asked": 1655362072.9231822,
+        "skills": [
+            500,
+            601,
+            602
+        ],
+        "tags": [
+            "statistics",
+            "data science"
+        ]
+    },
+    {
+        "id": 36,
+        "question_text": "What is the name of the paradox that states:\nFor numbers a, b, c, d, A, B, C, & D\nA/B > a/b and C/D > c/d does NOT imply that (A+C)/(B+D) > (a+c)/(b+d)\ne.g., 81/87 > 234/270 and 192/263 > 55/80, but NOT 273/350 > 289/350?",
+        "answers": [
+            "Markov's Paradox.",
+            "Simpson's Paradox.",
+            "Derrier's Paradox."
+        ],
+        "answer": "Simpson's Paradox.",
+        "n_times_asked": 1,
+        "n_times_answered_correctly": 1,
+        "last_asked": 1655362105.6404257,
+        "skills": [
+            500,
+            601,
+            602
+        ],
+        "tags": [
+            "statistics",
+            "data science"
+        ]
+    },
+    {
+        "id": 44,
+        "question_text": "Defined in whole (W) and half (H) steps, what is the proper sequence of steps from the tonic for the Locrian mode?",
+        "answers": [
+            "H-W-W-H-W-W-W",
+            "H-W-H-W-W-W-W",
+            "W-H-H-W-W-W-H"
+        ],
+        "answer": "H-W-W-H-W-W-W",
+        "n_times_asked": 1,
+        "n_times_answered_correctly": 1,
+        "last_asked": 1655473293.582208,
+        "skills": [
+            508
+        ],
+        "tags": [
+            "music",
+            "church modes"
+        ]
+    },
+    {
+        "id": 4,
+        "question_text": "What does the 'I' in S.O.L.I.D. stand for?",
+        "answers": [
+            "Interface Segregation Principle",
+            "Interest First",
+            "Inversion of Control"
+        ],
+        "answer": "Interface Segregation Principle",
+        "n_times_asked": 5,
+        "n_times_answered_correctly": 5,
+        "last_asked": 1655473305.665395,
+        "skills": [
+            500
+        ],
+        "tags": [
+            "software engineering",
+            "programming",
+            "technocraft"
+        ]
+    },
+    {
+        "id": 7,
+        "question_text": "What is the Interface Segregation Principle?",
+        "answers": [
+            "Interfaces should be narrow, not wide.",
+            "Interfaces should define implementation details.",
+            "No two interfaces should ever overlap."
+        ],
+        "answer": "Interfaces should be narrow, not wide.",
+        "n_times_asked": 4,
+        "n_times_answered_correctly": 4,
+        "last_asked": 1655473310.8134704,
+        "skills": [
+            500
+        ],
+        "tags": [
+            "software engineering",
+            "programming",
+            "technocraft"
+        ]
+    },
+    {
+        "id": 8,
+        "question_text": "What is the Liskov Substitution Principle?",
+        "answers": [
+            "Every subclass should function as a substitute for their base class.",
+            "Subclasses should be identical to their base class.",
+            "Subclasses should never be declared as types of their base class"
+        ],
+        "answer": "Every subclass should function as a substitute for their base class.",
+        "n_times_asked": 5,
+        "n_times_answered_correctly": 5,
+        "last_asked": 1655473321.312077,
+        "skills": [
+            500
+        ],
+        "tags": [
+            "software engineering",
+            "programming",
+            "technocraft"
+        ]
+    },
+    {
+        "id": 11,
+        "question_text": "What is Modus Tollens?",
+        "answers": [
+            "Affirming the antecedent: P -> Q AND P, thus Q.",
+            "Inversion: P -> Q AND Q -> P, thus Q AND P.",
+            "Denying the consequent: P -> Q AND ~Q, thus ~P."
+        ],
+        "answer": "Denying the consequent: P -> Q AND ~Q, thus ~P.",
+        "n_times_asked": 4,
+        "n_times_answered_correctly": 4,
+        "last_asked": 1655473328.804363,
+        "skills": [
+            500
+        ],
+        "tags": [
+            "math",
+            "logic"
+        ]
+    },
+    {
+        "id": 12,
+        "question_text": "What is the contrapositive?",
+        "answers": [
+            "P -> Q, thus ~Q -> ~P.",
+            "P -> Q, thus ~P -> ~Q.",
+            "P -> Q, thus ~Q -> P."
+        ],
+        "answer": "P -> Q, thus ~Q -> ~P.",
+        "n_times_asked": 4,
+        "n_times_answered_correctly": 4,
+        "last_asked": 1655473338.1455214,
+        "skills": [
+            500
+        ],
+        "tags": [
+            "math",
+            "logic"
+        ]
+    },
+    {
+        "id": 5,
+        "question_text": "What does the 'D' in S.O.L.I.D. stand for?",
+        "answers": [
+            "Dual-Use Principle",
+            "Denial of Service",
+            "Dependency Inversion Principle"
+        ],
+        "answer": "Dependency Inversion Principle",
+        "n_times_asked": 4,
+        "n_times_answered_correctly": 4,
+        "last_asked": 1655473366.9852388,
+        "skills": [
+            500
+        ],
+        "tags": [
+            "software engineering",
+            "programming",
+            "technocraft"
+        ]
+    },
+    {
+        "id": 13,
+        "question_text": "What is currying wrt functions?",
+        "answers": [
+            "It is the technique of taking several functions a coalescing them into a single function.",
+            "It is the technique whereby you pass a single vector as a parameter instead of all the elements of said vectors as individual parameters.",
+            "It is the technique of converting a function that takes multiple arguments into a sequence of functions that each takes a single argument."
+        ],
+        "answer": "It is the technique of converting a function that takes multiple arguments into a sequence of functions that each takes a single argument.",
+        "n_times_asked": 4,
+        "n_times_answered_correctly": 4,
+        "last_asked": 1655473382.798855,
+        "skills": [
+            500
+        ],
+        "tags": [
+            "math",
+            "functional programming"
+        ]
+    },
+    {
+        "id": 6,
+        "question_text": "What is the Dependency Inversion Principle?",
+        "answers": [
+            "Entities must depend on abstractions (interfaces), not concretions (implementations).",
+            "Software should have zero dependencies.",
+            "The user should not depend on the software dev to fix their problems."
+        ],
+        "answer": "Entities must depend on abstractions (interfaces), not concretions (implementations).",
+        "n_times_asked": 4,
+        "n_times_answered_correctly": 4,
+        "last_asked": 1655473389.2597322,
+        "skills": [
+            500
+        ],
+        "tags": [
+            "software engineering",
+            "programming",
+            "technocraft"
+        ]
+    },
+    {
+        "id": 43,
+        "question_text": "Defined in whole (W) and half (H) steps, what is the proper sequence of steps from the tonic for the Mixolydian mode?",
+        "answers": [
+            "W-H-H-W-W-W-H",
+            "W-W-H-W-W-H-W",
+            "H-W-H-W-W-W-W"
+        ],
+        "answer": "W-W-H-W-W-H-W",
+        "n_times_asked": 1,
+        "n_times_answered_correctly": 1,
+        "last_asked": 1655473405.1266427,
+        "skills": [
+            508
+        ],
+        "tags": [
+            "music",
+            "church modes"
+        ]
+    },
+    {
+        "id": 23,
+        "question_text": "What are Type I and Type II errors?",
+        "answers": [
+            "False Positive, Data Collection error, respectively.",
+            "False Positive, False Negative, respectively.",
+            "False Negative, False Positive, respectively."
+        ],
+        "answer": "False Positive, False Negative, respectively.",
+        "n_times_asked": 3,
+        "n_times_answered_correctly": 3,
+        "last_asked": 1655473424.240354,
+        "skills": [
+            500,
+            601,
+            602
+        ],
+        "tags": [
+            "statistics",
+            "data science"
+        ]
+    },
+    {
+        "id": 20,
+        "question_text": "When is a result statistically significant?",
+        "answers": [
+            "When a result is confirmed independently by several sources.",
+            "When it happens more than 50% of the time.",
+            "When it is unlikely that a result would have occurred under the null hypothesis, as defined by the p-value."
+        ],
+        "answer": "When it is unlikely that a result would have occurred under the null hypothesis, as defined by the p-value.",
+        "n_times_asked": 3,
+        "n_times_answered_correctly": 3,
+        "last_asked": 1655473449.781451,
+        "skills": [
+            500,
+            601,
+            602
+        ],
+        "tags": [
+            "statistics",
+            "data science"
+        ]
+    },
+    {
+        "id": 22,
+        "question_text": "When can we reject the null hypothesis?",
+        "answers": [
+            "When p > \u03b1.",
+            "When p \u2264 \u03b1.",
+            "When p = \u03b1."
+        ],
+        "answer": "When p \u2264 \u03b1.",
+        "n_times_asked": 3,
+        "n_times_answered_correctly": 2,
+        "last_asked": 1655473530.8807018,
+        "skills": [
+            500,
+            601,
+            602
+        ],
+        "tags": [
+            "statistics",
+            "data science"
+        ]
+    },
+    {
+        "id": 16,
+        "question_text": "What is the difference between Descriptive Statistics and Inferential Statistics?",
+        "answers": [
+            "Descriptive Statistics cannot be done without Inferential Statistics.",
+            "Descriptive Statistics show what the data are; Inferential Statistics show what the data mean.",
+            "Descriptive Statistics describe how to do Inferential Statistics."
+        ],
+        "answer": "Descriptive Statistics show what the data are; Inferential Statistics show what the data mean.",
+        "n_times_asked": 3,
+        "n_times_answered_correctly": 3,
+        "last_asked": 1655473648.0882747,
+        "skills": [
+            500,
+            601,
+            602
+        ],
+        "tags": [
+            "statistics",
+            "data science"
+        ]
+    },
+    {
+        "id": 15,
+        "question_text": "What is the Procrustean Bed?",
+        "answers": [
+            "A bed made from crustaceans.",
+            "A bed where people must fit perfectly: chop off those too long, stretch those too short.",
+            "A river bed that leads to the ocean."
+        ],
+        "answer": "A bed where people must fit perfectly: chop off those too long, stretch those too short.",
+        "n_times_asked": 3,
+        "n_times_answered_correctly": 3,
+        "last_asked": 1655473655.942901,
+        "skills": [
+            501,
+            601
+        ],
+        "tags": [
+            "mythology",
+            "bias"
+        ]
+    },
+    {
+        "id": 17,
+        "question_text": "What are oversampling and undersampling?",
+        "answers": [
+            "A reason for rejecting a given dataset as valid.",
+            "Forms of resampling to even out representation of majority and minority data to avoid incorrect conclusions based on an unbalanced dataset.",
+            "When statisticians go out and collect more samples of one kind and fewer of another to enhance the dataset."
+        ],
+        "answer": "Forms of resampling to even out representation of majority and minority data to avoid incorrect conclusions based on an unbalanced dataset.",
+        "n_times_asked": 3,
+        "n_times_answered_correctly": 3,
+        "last_asked": 1655473677.2111442,
+        "skills": [
+            500,
+            601,
+            602
+        ],
+        "tags": [
+            "statistics",
+            "data science"
+        ]
+    },
+    {
+        "id": 21,
+        "question_text": "What are the null and alternative hypotheses?",
+        "answers": [
+            "Null hypothesis: there is no explanation for a given phenomenon; Alternative hypothesis: there is an explanation.",
+            "Null hypothesis: nothing happened; Alternative hypothesis: under the same conditions, something did happen the second time.",
+            "Null hypothesis: there is no observable effect in the population; Alternative hypothesis: there is an observable effect in the population."
+        ],
+        "answer": "Null hypothesis: there is no observable effect in the population; Alternative hypothesis: there is an observable effect in the population.",
+        "n_times_asked": 3,
+        "n_times_answered_correctly": 3,
+        "last_asked": 1655473690.7803264,
+        "skills": [
+            500,
+            601,
+            602
+        ],
+        "tags": [
+            "statistics",
+            "data science"
+        ]
+    },
+    {
+        "id": 18,
+        "question_text": "What are the three measures of central tendency in statistics?",
+        "answers": [
+            "Mode, Median, Mean",
+            "Mode, Median, Meridian",
+            "Median, Mode, Meridian"
+        ],
+        "answer": "Mode, Median, Mean",
+        "n_times_asked": 3,
+        "n_times_answered_correctly": 3,
+        "last_asked": 1655473699.5944846,
+        "skills": [
+            500,
+            601,
+            602
+        ],
+        "tags": [
+            "statistics",
+            "data science"
+        ]
+    },
+    {
+        "id": 24,
+        "question_text": "How are p-values (the threshold for statistical significance) determined?",
+        "answers": [
+            "They are decided by the Statistics Bureau.",
+            "They are arbitrary and decided by the researcher, but are often p = 0.05 or 5%.",
+            "It depends on the quantity of data available: more data means a higher threshold."
+        ],
+        "answer": "They are arbitrary and decided by the researcher, but are often p = 0.05 or 5%.",
+        "n_times_asked": 3,
+        "n_times_answered_correctly": 3,
+        "last_asked": 1655473715.7401989,
+        "skills": [
+            500,
+            601,
+            602
+        ],
+        "tags": [
+            "statistics",
+            "data science"
+        ]
+    },
+    {
+        "id": 19,
+        "question_text": "What does variance measure?\n (\u03a3 (x_i - \u00b5)^2)/n ",
+        "answers": [
+            "It measures the average change between data points.",
+            "It measures how close an individual data point is from the mean.",
+            "It measures the average distance of all data points from the mean."
+        ],
+        "answer": "It measures the average distance of all data points from the mean.",
+        "n_times_asked": 3,
+        "n_times_answered_correctly": 3,
+        "last_asked": 1655473756.3066647,
+        "skills": [
+            500,
+            601,
+            602
+        ],
+        "tags": [
+            "statistics",
+            "data science"
+        ]
+    },
+    {
+        "id": 28,
+        "question_text": "Let A, B \u2208 F be any two events. What event is A \u222a B?",
+        "answers": [
+            "Either event A occurs, or B occurs, but not both (Exclusive Or).",
+            "The event A occurs, or B occurs, or they both occur (Inclusive Or).",
+            "The event that neither A nor B occur."
+        ],
+        "answer": "The event A occurs, or B occurs, or they both occur (Inclusive Or).",
+        "n_times_asked": 3,
+        "n_times_answered_correctly": 3,
+        "last_asked": 1655473801.3467653,
+        "skills": [
+            500,
+            601,
+            602
+        ],
+        "tags": [
+            "statistics",
+            "data science"
+        ]
+    },
+    {
+        "id": 25,
+        "question_text": "What is statistical power?",
+        "answers": [
+            "It is the probability of avoiding a Type I error (False Positive).",
+            "It is the likelihood of a significance test detecting an effect when there is one (True Positive). It is mainly influenced by sample size, effect size, and significance level.",
+            "It is the metric used to determine the author's credibility."
+        ],
+        "answer": "It is the likelihood of a significance test detecting an effect when there is one (True Positive). It is mainly influenced by sample size, effect size, and significance level.",
+        "n_times_asked": 3,
+        "n_times_answered_correctly": 3,
+        "last_asked": 1655473818.9175656,
+        "skills": [
+            500,
+            601,
+            602
+        ],
+        "tags": [
+            "statistics",
+            "data science"
+        ]
+    },
+    {
+        "id": 30,
+        "question_text": "Let A, B \u2208 F be any two events. What event is A complement?",
+        "answers": [
+            "S - A, the event that A does not occur.",
+            "F - A, The event that neither A nor B occur.",
+            "B - A, Either event A occurs, or B occurs, but not both."
+        ],
+        "answer": "S - A, the event that A does not occur.",
+        "n_times_asked": 3,
+        "n_times_answered_correctly": 3,
+        "last_asked": 1655473826.2542093,
+        "skills": [
+            500,
+            601,
+            602
+        ],
+        "tags": [
+            "statistics",
+            "data science"
+        ]
+    },
+    {
+        "id": 31,
+        "question_text": "What is a 'Confidence Interval' wrt to Statistics?",
+        "answers": [
+            "A range of two standard deviations.",
+            "The middle 90% range of a dataset.",
+            "A measure of distance from the mode."
+        ],
+        "answer": "The middle 90% range of a dataset.",
+        "n_times_asked": 2,
+        "n_times_answered_correctly": 2,
+        "last_asked": 1655473834.4411418,
+        "skills": [
+            500,
+            601,
+            602
+        ],
+        "tags": [
+            "statistics",
+            "data science"
+        ]
+    },
+    {
+        "id": 9,
+        "question_text": "What is the Open-Closed Principle?",
+        "answers": [
+            "All objects should be closed to save memory.",
+            "All entities should have get methods for all fields.",
+            "Entities should be open for extension, but closed for modification."
+        ],
+        "answer": "Entities should be open for extension, but closed for modification.",
+        "n_times_asked": 5,
+        "n_times_answered_correctly": 5,
+        "last_asked": 1655473844.946167,
+        "skills": [
+            500
+        ],
+        "tags": [
+            "software engineering",
+            "programming",
+            "technocraft"
+        ]
+    },
+    {
+        "id": 2,
+        "question_text": "What does the 'O' in S.O.L.I.D. stand for?",
+        "answers": [
+            "Overuse Principle",
+            "Only Once Principle",
+            "Open-Closed Principle"
+        ],
+        "answer": "Open-Closed Principle",
+        "n_times_asked": 6,
+        "n_times_answered_correctly": 6,
+        "last_asked": 1655473848.4513795,
+        "skills": [
+            500
+        ],
+        "tags": [
+            "software engineering",
+            "programming",
+            "technocraft"
+        ]
+    },
+    {
+        "id": 32,
+        "question_text": "What is 'Bootstrapping' wrt to Statistics?",
+        "answers": [
+            "The process of creating new samples by choosing a random number of values from the original sample of size n.",
+            "The process of creating new samples by choosing n values from the original sample of size n uniformly and with replacement.",
+            "The process of creating new samples by choosing n-1 values from the original sample of size n."
+        ],
+        "answer": "The process of creating new samples by choosing n values from the original sample of size n uniformly and with replacement.",
+        "n_times_asked": 2,
+        "n_times_answered_correctly": 2,
+        "last_asked": 1655473865.4179704,
+        "skills": [
+            500,
+            601,
+            602
+        ],
+        "tags": [
+            "statistics",
+            "data science"
+        ]
+    },
+    {
+        "id": 27,
+        "question_text": "If a sample space S is finite, then |S| = N. What is the magnitude of F? [F = { A | A \u2286 S }]",
+        "answers": [
+            "2^F.",
+            "2^N.",
+            "2^S."
+        ],
+        "answer": "2^N.",
+        "n_times_asked": 3,
+        "n_times_answered_correctly": 3,
+        "last_asked": 1655473899.5434234,
+        "skills": [
+            500,
+            601,
+            602
+        ],
+        "tags": [
+            "statistics",
+            "data science"
+        ]
+    },
+    {
+        "id": 26,
+        "question_text": "If an event A is defined as any subset of the sample space S, then what are the definitions of S, \u00d8, and F? [F = { A | A \u2286 S }]",
+        "answers": [
+            "The sure event, the class of all possible events, the impossible event.",
+            "The sure event, the impossible event, the class of all possible events.",
+            "The impossible event, the class of all possible events, the sure event."
+        ],
+        "answer": "The sure event, the impossible event, the class of all possible events.",
+        "n_times_asked": 3,
+        "n_times_answered_correctly": 3,
+        "last_asked": 1655473933.4637463,
+        "skills": [
+            500,
+            601,
+            602
+        ],
+        "tags": [
+            "statistics",
+            "data science"
+        ]
+    },
+    {
+        "id": 3,
+        "question_text": "What does the 'L' in S.O.L.I.D. stand for?",
+        "answers": [
+            "Last In Principle",
+            "Later Principle",
+            "Liskov Substitution Principle"
+        ],
+        "answer": "Liskov Substitution Principle",
+        "n_times_asked": 6,
+        "n_times_answered_correctly": 6,
+        "last_asked": 1655473943.7438388,
+        "skills": [
+            500
+        ],
+        "tags": [
+            "software engineering",
+            "programming",
+            "technocraft"
         ]
     }
 ]

@@ -8,6 +8,7 @@ class Skills(enum.Enum):
     MUSIC_TECHNIQUE = 300
     FIGHT_TECHNIQUE = 301
     # CON (400)
+    HEALTH = 400
     # INT (500)
     STEM = 500
     HUMANITIES = 501
@@ -16,6 +17,7 @@ class Skills(enum.Enum):
     LINGUISTICS = 505
     SURVIVAL_CONCEPTS = 506
     ECONOMICS = 507
+    MUSIC_CONCEPTS = 508
     # WIS (600)
     ACUMEN = 600
     AWARENESS = 601
@@ -27,12 +29,14 @@ class Skills(enum.Enum):
     PERSUASION = 701
     PEOPLE_READING = 702
     # WIL (800)
+    PERSERVERANCE = 800
 
 
 skillsMap = {
     Skills.ATHLETICS.value: "Atheltics",
     Skills.MUSIC_TECHNIQUE.value: "Music-Technique",
     Skills.FIGHT_TECHNIQUE.value: "Fight-Technique",
+    Skills.HEALTH.value: "Health",
     Skills.STEM.value: "STEM",
     Skills.HUMANITIES.value: "Humanities",
     Skills.ARTS.value: "Arts",
@@ -40,6 +44,7 @@ skillsMap = {
     Skills.LINGUISTICS.value: "Linguistics",
     Skills.SURVIVAL_CONCEPTS.value: "Survival-Concepts",
     Skills.ECONOMICS.value: "Economics",
+    Skills.MUSIC_CONCEPTS.value: "Music-Concepts",
     Skills.ACUMEN.value: "Acumen",
     Skills.AWARENESS.value: "Awareness",
     Skills.INSIGHT.value: "Insight",
@@ -47,5 +52,6 @@ skillsMap = {
     Skills.SURVIVAL_APPLICATIONS.value: "Survival-Applications",
     Skills.PERFORMANCE.value: "Performance",
     Skills.PERSUASION.value: "Persuasion",
-    Skills.PEOPLE_READING.value: "People Reading"
+    Skills.PEOPLE_READING.value: "People Reading",
+    Skills.PERSERVERANCE.value: "Perserverance"
 }

@@ -104,5 +104,43 @@
             "301": 3
         },
         "start_time": 1654415741.5605016
+    },
+    {
+        "id": 4,
+        "subquests": [],
+        "superquest": -1,
+        "title": "Trim the Excess; Improve your Sleep",
+        "description": "In an effort to improve sleep quality, and thus, overall health quality, I will disconnect from the world between the hours of 10pm and 8am (save exceptional cases).",
+        "stats": [
+            7,
+            3,
+            4
+        ],
+        "skills": [
+            800,
+            400,
+            601
+        ],
+        "duration": 30,
+        "conditions_for_success": [
+            "Must not use any internet-related services between the hours of 10pm - 8am"
+        ],
+        "status": 1,
+        "tags": [
+            "health",
+            "sleep"
+        ],
+        "notes": [
+            "An emergency will not invalidate the quest (e.g., an unscheduled call from family or friends)"
+        ],
+        "xp_values": {
+            "7": 12,
+            "3": 8,
+            "4": 4,
+            "800": 12,
+            "400": 8,
+            "601": 4
+        },
+        "start_time": 1655362572.9453137
     }
 ]
