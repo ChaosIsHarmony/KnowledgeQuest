@@ -20,8 +20,8 @@ def load_file(path: str) -> List[str]:
     try:
         with open(path) as f:
             contents = json.load(f)
-    except:
-        print(f"There was a problem loading the file: {path}")
+    except Exception as e:
+        print(f"There was a problem loading the file: {path}\n{e}")
 
     return contents
 
