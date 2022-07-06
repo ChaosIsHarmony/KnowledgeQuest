@@ -1,337 +1,5 @@
 [
     {
-        "id": 13,
-        "question_text": "What is currying wrt functions?",
-        "answers": [
-            "It is the technique of taking several functions a coalescing them into a single function.",
-            "It is the technique of converting a function that takes multiple arguments into a sequence of functions that each takes a single argument.",
-            "It is the technique whereby you pass a single vector as a parameter instead of all the elements of said vectors as individual parameters."
-        ],
-        "answer": "It is the technique of converting a function that takes multiple arguments into a sequence of functions that each takes a single argument.",
-        "n_times_asked": 5,
-        "n_times_answered_correctly": 5,
-        "last_asked": 1655618282.3128912,
-        "skills": [
-            500
-        ],
-        "tags": [
-            "math",
-            "functional programming"
-        ]
-    },
-    {
-        "id": 12,
-        "question_text": "What is the contrapositive?",
-        "answers": [
-            "P -> Q, thus ~P -> ~Q.",
-            "P -> Q, thus ~Q -> P.",
-            "P -> Q, thus ~Q -> ~P."
-        ],
-        "answer": "P -> Q, thus ~Q -> ~P.",
-        "n_times_asked": 5,
-        "n_times_answered_correctly": 5,
-        "last_asked": 1655618287.9565964,
-        "skills": [
-            500
-        ],
-        "tags": [
-            "math",
-            "logic"
-        ]
-    },
-    {
-        "id": 23,
-        "question_text": "What are Type I and Type II errors?",
-        "answers": [
-            "False Negative, False Positive, respectively.",
-            "False Positive, Data Collection error, respectively.",
-            "False Positive, False Negative, respectively."
-        ],
-        "answer": "False Positive, False Negative, respectively.",
-        "n_times_asked": 4,
-        "n_times_answered_correctly": 4,
-        "last_asked": 1655618296.163865,
-        "skills": [
-            500
-        ],
-        "tags": [
-            "math",
-            "statistics",
-            "data science"
-        ]
-    },
-    {
-        "id": 5,
-        "question_text": "What does the 'D' in S.O.L.I.D. stand for?",
-        "answers": [
-            "Dependency Inversion Principle",
-            "Denial of Service",
-            "Dual-Use Principle"
-        ],
-        "answer": "Dependency Inversion Principle",
-        "n_times_asked": 5,
-        "n_times_answered_correctly": 5,
-        "last_asked": 1655618314.3648398,
-        "skills": [
-            500
-        ],
-        "tags": [
-            "software engineering",
-            "programming",
-            "technocraft"
-        ]
-    },
-    {
-        "id": 43,
-        "question_text": "Defined in whole (W) and half (H) steps, what is the proper sequence of steps from the tonic for the Mixolydian mode?",
-        "answers": [
-            "H-W-H-W-W-W-W",
-            "W-W-H-W-W-H-W",
-            "W-H-H-W-W-W-H"
-        ],
-        "answer": "W-W-H-W-W-H-W",
-        "n_times_asked": 2,
-        "n_times_answered_correctly": 2,
-        "last_asked": 1655618325.4456518,
-        "skills": [
-            508
-        ],
-        "tags": [
-            "music",
-            "church modes"
-        ]
-    },
-    {
-        "id": 6,
-        "question_text": "What is the Dependency Inversion Principle?",
-        "answers": [
-            "Entities must depend on abstractions (interfaces), not concretions (implementations).",
-            "Software should have zero dependencies.",
-            "The user should not depend on the software dev to fix their problems."
-        ],
-        "answer": "Entities must depend on abstractions (interfaces), not concretions (implementations).",
-        "n_times_asked": 5,
-        "n_times_answered_correctly": 5,
-        "last_asked": 1655618366.2430937,
-        "skills": [
-            500
-        ],
-        "tags": [
-            "software engineering",
-            "programming",
-            "technocraft"
-        ]
-    },
-    {
-        "id": 47,
-        "question_text": "If playing a game where you can earn $1 per pip on a single rolled die, and have to pay $3 per roll, what is the expected value and is it worth it to play in the long run?",
-        "answers": [
-            "ev = $3.50; worth it: the expected value minus the cost is $0.5.",
-            "ev = $3; neutral: the expected value minus the cost is $0.",
-            "ev = $2.50; not worth it: the expected value minus the cost is -$0.5."
-        ],
-        "answer": "ev = $3.50; worth it: the expected value minus the cost is $0.5.",
-        "n_times_asked": 1,
-        "n_times_answered_correctly": 1,
-        "last_asked": 1655618426.5815089,
-        "skills": [
-            500
-        ],
-        "tags": [
-            "math",
-            "statistics",
-            "data science"
-        ]
-    },
-    {
-        "id": 11,
-        "question_text": "What is Modus Tollens?",
-        "answers": [
-            "Denying the consequent: P -> Q AND ~Q, thus ~P.",
-            "Inversion: P -> Q AND Q -> P, thus Q AND P.",
-            "Affirming the antecedent: P -> Q AND P, thus Q."
-        ],
-        "answer": "Denying the consequent: P -> Q AND ~Q, thus ~P.",
-        "n_times_asked": 5,
-        "n_times_answered_correctly": 5,
-        "last_asked": 1655618437.4890122,
-        "skills": [
-            500
-        ],
-        "tags": [
-            "math",
-            "logic"
-        ]
-    },
-    {
-        "id": 20,
-        "question_text": "When is a result statistically significant?",
-        "answers": [
-            "When it happens more than 50% of the time.",
-            "When a result is confirmed independently by several sources.",
-            "When it is unlikely that a result would have occurred under the null hypothesis, as defined by the p-value."
-        ],
-        "answer": "When it is unlikely that a result would have occurred under the null hypothesis, as defined by the p-value.",
-        "n_times_asked": 4,
-        "n_times_answered_correctly": 4,
-        "last_asked": 1655618460.140474,
-        "skills": [
-            500
-        ],
-        "tags": [
-            "math",
-            "statistics",
-            "data science"
-        ]
-    },
-    {
-        "id": 16,
-        "question_text": "What is the difference between Descriptive Statistics and Inferential Statistics?",
-        "answers": [
-            "Descriptive Statistics cannot be done without Inferential Statistics.",
-            "Descriptive Statistics show what the data are; Inferential Statistics show what the data mean.",
-            "Descriptive Statistics describe how to do Inferential Statistics."
-        ],
-        "answer": "Descriptive Statistics show what the data are; Inferential Statistics show what the data mean.",
-        "n_times_asked": 4,
-        "n_times_answered_correctly": 4,
-        "last_asked": 1655636840.9206772,
-        "skills": [
-            500
-        ],
-        "tags": [
-            "math",
-            "statistics",
-            "data science"
-        ]
-    },
-    {
-        "id": 17,
-        "question_text": "What are oversampling and undersampling?",
-        "answers": [
-            "A reason for rejecting a given dataset as valid.",
-            "Forms of resampling to even out representation of majority and minority data to avoid incorrect conclusions based on an unbalanced dataset.",
-            "When statisticians go out and collect more samples of one kind and fewer of another to enhance the dataset."
-        ],
-        "answer": "Forms of resampling to even out representation of majority and minority data to avoid incorrect conclusions based on an unbalanced dataset.",
-        "n_times_asked": 4,
-        "n_times_answered_correctly": 4,
-        "last_asked": 1655636858.9842954,
-        "skills": [
-            500
-        ],
-        "tags": [
-            "math",
-            "statistics",
-            "data science"
-        ]
-    },
-    {
-        "id": 24,
-        "question_text": "How are p-values (the threshold for statistical significance) determined?",
-        "answers": [
-            "They are arbitrary and decided by the researcher, but are often p = 0.05 or 5%.",
-            "They are decided by the Statistics Bureau.",
-            "It depends on the quantity of data available: more data means a higher threshold."
-        ],
-        "answer": "They are arbitrary and decided by the researcher, but are often p = 0.05 or 5%.",
-        "n_times_asked": 4,
-        "n_times_answered_correctly": 4,
-        "last_asked": 1655636867.9750962,
-        "skills": [
-            500
-        ],
-        "tags": [
-            "math",
-            "statistics",
-            "data science"
-        ]
-    },
-    {
-        "id": 49,
-        "question_text": "What is the Gambler's Fallacy?",
-        "answers": [
-            "Confusing independent events for dependent events.",
-            "Believing in the fairness of casion games.",
-            "Not cashing out soon enough."
-        ],
-        "answer": "Confusing independent events for dependent events.",
-        "n_times_asked": 1,
-        "n_times_answered_correctly": 1,
-        "last_asked": 1655636876.670311,
-        "skills": [
-            500
-        ],
-        "tags": [
-            "math",
-            "statistics",
-            "data science"
-        ]
-    },
-    {
-        "id": 15,
-        "question_text": "What is the Procrustean Bed?",
-        "answers": [
-            "A bed made from crustaceans.",
-            "A bed where people must fit perfectly: chop off those too long, stretch those too short.",
-            "A river bed that leads to the ocean."
-        ],
-        "answer": "A bed where people must fit perfectly: chop off those too long, stretch those too short.",
-        "n_times_asked": 4,
-        "n_times_answered_correctly": 4,
-        "last_asked": 1655636884.4201214,
-        "skills": [
-            501,
-            601
-        ],
-        "tags": [
-            "mythology",
-            "bias"
-        ]
-    },
-    {
-        "id": 18,
-        "question_text": "What are the three measures of central tendency in statistics?",
-        "answers": [
-            "Mode, Median, Meridian",
-            "Mode, Median, Mean",
-            "Median, Mode, Meridian"
-        ],
-        "answer": "Mode, Median, Mean",
-        "n_times_asked": 4,
-        "n_times_answered_correctly": 4,
-        "last_asked": 1655636889.8230028,
-        "skills": [
-            500
-        ],
-        "tags": [
-            "math",
-            "statistics",
-            "data science"
-        ]
-    },
-    {
-        "id": 48,
-        "question_text": "When are two events statistically independent? P(A \u2229 B) = P(A) * P(B)",
-        "answers": [
-            "When two events do not depend on a third event for their occurrence.",
-            "When two events cannot both possibly happen.",
-            "When the events can happen in any order, and the first event does not affect the probability of the second event occurring."
-        ],
-        "answer": "When the events can happen in any order, and the first event does not affect the probability of the second event occurring.",
-        "n_times_asked": 1,
-        "n_times_answered_correctly": 1,
-        "last_asked": 1655636907.7168071,
-        "skills": [
-            500
-        ],
-        "tags": [
-            "math",
-            "statistics",
-            "data science"
-        ]
-    },
-    {
         "id": 21,
         "question_text": "What are the null and alternative hypotheses?",
         "answers": [
@@ -1220,6 +888,421 @@
         "tags": [
             "math",
             "linear algebra"
+        ]
+    },
+    {
+        "id": 60,
+        "question_text": "When are two vectors said to be orthogonal (perpendicular) to one another wrt Linear Algebra?",
+        "answers": [
+            "When their dot product equals 0.",
+            "When they have a different number of components (e.g., A=(a,b), B=(w,x,y,z)).",
+            "When they point in opposite directions."
+        ],
+        "answer": "When their dot product equals 0.",
+        "n_times_asked": 1,
+        "n_times_answered_correctly": 1,
+        "last_asked": 1657111343.4271004,
+        "skills": [
+            500
+        ],
+        "tags": [
+            "math",
+            "linear algebra"
+        ]
+    },
+    {
+        "id": 6,
+        "question_text": "What is the Dependency Inversion Principle?",
+        "answers": [
+            "Software should have zero dependencies.",
+            "Entities must depend on abstractions (interfaces), not concretions (implementations).",
+            "The user should not depend on the software dev to fix their problems."
+        ],
+        "answer": "Entities must depend on abstractions (interfaces), not concretions (implementations).",
+        "n_times_asked": 6,
+        "n_times_answered_correctly": 6,
+        "last_asked": 1657111380.5114114,
+        "skills": [
+            500
+        ],
+        "tags": [
+            "software engineering",
+            "programming",
+            "technocraft"
+        ]
+    },
+    {
+        "id": 62,
+        "question_text": "How many different ways are there to arrange the elements in a set N (i.e., how many permutations)?",
+        "answers": [
+            "N!.",
+            "Nn.",
+            "N^n."
+        ],
+        "answer": "N!.",
+        "n_times_asked": 1,
+        "n_times_answered_correctly": 1,
+        "last_asked": 1657111412.4656627,
+        "skills": [
+            500
+        ],
+        "tags": [
+            "math",
+            "combinatorics",
+            "probability"
+        ]
+    },
+    {
+        "id": 23,
+        "question_text": "What are Type I and Type II errors?",
+        "answers": [
+            "False Positive, Data Collection error, respectively.",
+            "False Positive, False Negative, respectively.",
+            "False Negative, False Positive, respectively."
+        ],
+        "answer": "False Positive, False Negative, respectively.",
+        "n_times_asked": 5,
+        "n_times_answered_correctly": 5,
+        "last_asked": 1657111421.9179432,
+        "skills": [
+            500
+        ],
+        "tags": [
+            "math",
+            "statistics",
+            "data science"
+        ]
+    },
+    {
+        "id": 12,
+        "question_text": "What is the contrapositive?",
+        "answers": [
+            "P -> Q, thus ~Q -> P.",
+            "P -> Q, thus ~P -> ~Q.",
+            "P -> Q, thus ~Q -> ~P."
+        ],
+        "answer": "P -> Q, thus ~Q -> ~P.",
+        "n_times_asked": 6,
+        "n_times_answered_correctly": 6,
+        "last_asked": 1657111439.010898,
+        "skills": [
+            500
+        ],
+        "tags": [
+            "math",
+            "logic"
+        ]
+    },
+    {
+        "id": 43,
+        "question_text": "Defined in whole (W) and half (H) steps, what is the proper sequence of steps from the tonic for the Mixolydian mode?",
+        "answers": [
+            "W-H-H-W-W-W-H",
+            "W-W-H-W-W-H-W",
+            "H-W-H-W-W-W-W"
+        ],
+        "answer": "W-W-H-W-W-H-W",
+        "n_times_asked": 3,
+        "n_times_answered_correctly": 3,
+        "last_asked": 1657111468.6108792,
+        "skills": [
+            508
+        ],
+        "tags": [
+            "music",
+            "church modes"
+        ]
+    },
+    {
+        "id": 13,
+        "question_text": "What is currying wrt functions?",
+        "answers": [
+            "It is the technique whereby you pass a single vector as a parameter instead of all the elements of said vectors as individual parameters.",
+            "It is the technique of taking several functions a coalescing them into a single function.",
+            "It is the technique of converting a function that takes multiple arguments into a sequence of functions that each takes a single argument."
+        ],
+        "answer": "It is the technique of converting a function that takes multiple arguments into a sequence of functions that each takes a single argument.",
+        "n_times_asked": 6,
+        "n_times_answered_correctly": 6,
+        "last_asked": 1657111497.6450164,
+        "skills": [
+            500
+        ],
+        "tags": [
+            "math",
+            "functional programming"
+        ]
+    },
+    {
+        "id": 5,
+        "question_text": "What does the 'D' in S.O.L.I.D. stand for?",
+        "answers": [
+            "Dependency Inversion Principle",
+            "Dual-Use Principle",
+            "Denial of Service"
+        ],
+        "answer": "Dependency Inversion Principle",
+        "n_times_asked": 6,
+        "n_times_answered_correctly": 6,
+        "last_asked": 1657111507.403898,
+        "skills": [
+            500
+        ],
+        "tags": [
+            "software engineering",
+            "programming",
+            "technocraft"
+        ]
+    },
+    {
+        "id": 63,
+        "question_text": "Which correlation is a number between -1 and 1 that indicates both the strength and sign of the association between two variables?",
+        "answers": [
+            "Pearson correlation.",
+            "Schnier correlation.",
+            "Laplace correlation."
+        ],
+        "answer": "Pearson correlation.",
+        "n_times_asked": 1,
+        "n_times_answered_correctly": 1,
+        "last_asked": 1657111519.4381032,
+        "skills": [
+            500
+        ],
+        "tags": [
+            "math",
+            "statistics",
+            "data science"
+        ]
+    },
+    {
+        "id": 61,
+        "question_text": "How many outcomes are possible when an element is selected from a set N with replacement n times?",
+        "answers": [
+            "Nn.",
+            "N^n.",
+            "N!."
+        ],
+        "answer": "N^n.",
+        "n_times_asked": 1,
+        "n_times_answered_correctly": 1,
+        "last_asked": 1657111538.8377624,
+        "skills": [
+            500
+        ],
+        "tags": [
+            "math",
+            "combinatorics",
+            "probability"
+        ]
+    },
+    {
+        "id": 16,
+        "question_text": "What is the difference between Descriptive Statistics and Inferential Statistics?",
+        "answers": [
+            "Descriptive Statistics show what the data are; Inferential Statistics show what the data mean.",
+            "Descriptive Statistics describe how to do Inferential Statistics.",
+            "Descriptive Statistics cannot be done without Inferential Statistics."
+        ],
+        "answer": "Descriptive Statistics show what the data are; Inferential Statistics show what the data mean.",
+        "n_times_asked": 5,
+        "n_times_answered_correctly": 5,
+        "last_asked": 1657115578.0355487,
+        "skills": [
+            500
+        ],
+        "tags": [
+            "math",
+            "statistics",
+            "data science"
+        ]
+    },
+    {
+        "id": 48,
+        "question_text": "When are two events statistically independent? P(A \u2229 B) = P(A) * P(B)",
+        "answers": [
+            "When two events cannot both possibly happen.",
+            "When two events do not depend on a third event for their occurrence.",
+            "When the events can happen in any order, and the first event does not affect the probability of the second event occurring."
+        ],
+        "answer": "When the events can happen in any order, and the first event does not affect the probability of the second event occurring.",
+        "n_times_asked": 2,
+        "n_times_answered_correctly": 2,
+        "last_asked": 1657115590.8471425,
+        "skills": [
+            500
+        ],
+        "tags": [
+            "math",
+            "statistics",
+            "data science"
+        ]
+    },
+    {
+        "id": 18,
+        "question_text": "What are the three measures of central tendency in statistics?",
+        "answers": [
+            "Median, Mode, Meridian",
+            "Mode, Median, Mean",
+            "Mode, Median, Meridian"
+        ],
+        "answer": "Mode, Median, Mean",
+        "n_times_asked": 5,
+        "n_times_answered_correctly": 5,
+        "last_asked": 1657115597.7726698,
+        "skills": [
+            500
+        ],
+        "tags": [
+            "math",
+            "statistics",
+            "data science"
+        ]
+    },
+    {
+        "id": 11,
+        "question_text": "What is Modus Tollens?",
+        "answers": [
+            "Affirming the antecedent: P -> Q AND P, thus Q.",
+            "Inversion: P -> Q AND Q -> P, thus Q AND P.",
+            "Denying the consequent: P -> Q AND ~Q, thus ~P."
+        ],
+        "answer": "Denying the consequent: P -> Q AND ~Q, thus ~P.",
+        "n_times_asked": 6,
+        "n_times_answered_correctly": 6,
+        "last_asked": 1657115608.3848941,
+        "skills": [
+            500
+        ],
+        "tags": [
+            "math",
+            "logic"
+        ]
+    },
+    {
+        "id": 20,
+        "question_text": "When is a result statistically significant?",
+        "answers": [
+            "When it happens more than 50% of the time.",
+            "When a result is confirmed independently by several sources.",
+            "When it is unlikely that a result would have occurred under the null hypothesis, as defined by the p-value."
+        ],
+        "answer": "When it is unlikely that a result would have occurred under the null hypothesis, as defined by the p-value.",
+        "n_times_asked": 5,
+        "n_times_answered_correctly": 5,
+        "last_asked": 1657115671.6931617,
+        "skills": [
+            500
+        ],
+        "tags": [
+            "math",
+            "statistics",
+            "data science"
+        ]
+    },
+    {
+        "id": 15,
+        "question_text": "What is the Procrustean Bed?",
+        "answers": [
+            "A river bed that leads to the ocean.",
+            "A bed made from crustaceans.",
+            "A bed where people must fit perfectly: chop off those too long, stretch those too short."
+        ],
+        "answer": "A bed where people must fit perfectly: chop off those too long, stretch those too short.",
+        "n_times_asked": 5,
+        "n_times_answered_correctly": 5,
+        "last_asked": 1657115677.8410606,
+        "skills": [
+            501,
+            601
+        ],
+        "tags": [
+            "mythology",
+            "bias"
+        ]
+    },
+    {
+        "id": 17,
+        "question_text": "What are oversampling and undersampling?",
+        "answers": [
+            "A reason for rejecting a given dataset as valid.",
+            "Forms of resampling to even out representation of majority and minority data to avoid incorrect conclusions based on an unbalanced dataset.",
+            "When statisticians go out and collect more samples of one kind and fewer of another to enhance the dataset."
+        ],
+        "answer": "Forms of resampling to even out representation of majority and minority data to avoid incorrect conclusions based on an unbalanced dataset.",
+        "n_times_asked": 5,
+        "n_times_answered_correctly": 5,
+        "last_asked": 1657115695.0958538,
+        "skills": [
+            500
+        ],
+        "tags": [
+            "math",
+            "statistics",
+            "data science"
+        ]
+    },
+    {
+        "id": 47,
+        "question_text": "If playing a game where you can earn $1 per pip on a single rolled die, and have to pay $3 per roll, what is the expected value and is it worth it to play in the long run?",
+        "answers": [
+            "ev = $3; neutral: the expected value minus the cost is $0.",
+            "ev = $2.50; not worth it: the expected value minus the cost is -$0.5.",
+            "ev = $3.50; worth it: the expected value minus the cost is $0.5."
+        ],
+        "answer": "ev = $3.50; worth it: the expected value minus the cost is $0.5.",
+        "n_times_asked": 2,
+        "n_times_answered_correctly": 2,
+        "last_asked": 1657116020.1155665,
+        "skills": [
+            500
+        ],
+        "tags": [
+            "math",
+            "statistics",
+            "data science"
+        ]
+    },
+    {
+        "id": 49,
+        "question_text": "What is the Gambler's Fallacy?",
+        "answers": [
+            "Believing in the fairness of casino games.",
+            "Confusing independent events for dependent events.",
+            "Not cashing out soon enough."
+        ],
+        "answer": "Confusing independent events for dependent events.",
+        "n_times_asked": 2,
+        "n_times_answered_correctly": 2,
+        "last_asked": 1657116042.6412256,
+        "skills": [
+            500
+        ],
+        "tags": [
+            "math",
+            "statistics",
+            "data science"
+        ]
+    },
+    {
+        "id": 24,
+        "question_text": "How are p-values (the threshold for statistical significance) determined?",
+        "answers": [
+            "It depends on the quantity of data available: more data means a higher threshold.",
+            "They are arbitrary and decided by the researcher, but are often p = 0.05 or 5%.",
+            "They are decided by the Statistics Bureau."
+        ],
+        "answer": "They are arbitrary and decided by the researcher, but are often p = 0.05 or 5%.",
+        "n_times_asked": 5,
+        "n_times_answered_correctly": 5,
+        "last_asked": 1657116054.864761,
+        "skills": [
+            500
+        ],
+        "tags": [
+            "math",
+            "statistics",
+            "data science"
         ]
     }
 ]
